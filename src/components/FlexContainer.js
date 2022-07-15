@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container } from '@mui/material';
 
 const FlexContainer = ({ children, column }) => {
@@ -7,9 +8,10 @@ const FlexContainer = ({ children, column }) => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        ...( column === true && {flexDirection: 'column'}),
-      }}>
- {children}
+        ...(column === true && { flexDirection: 'column' }),
+      }}
+    >
+      {children}
     </Container>
   );
 };

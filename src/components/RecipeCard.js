@@ -1,4 +1,4 @@
-// import { useState } from 'react';
+import React from 'react';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
@@ -53,14 +53,15 @@ export default function RecipeCard() {
           <Card>
             <CardContent>
               <Typography>
-                1 medium onion (roughly chopped) 3 medium tomatoes (rougly
+                Ingredients
+                {/* 1 medium onion (roughly chopped) 3 medium tomatoes (rougly
                 chopped) 1 inch knob ginger 4 cloves garlic 1 tablespoon
                 coriander powder 1 tablespoon garam masala 2 teaspoon paprika ½
                 to 1 teaspoon cayenne (optional) 2 tablespoon raw cashews (use
                 pumpkin seeds for a nut-free version) 1 teaspoon sugar 1
                 tablespoon kasoori methi (dry fenugreek leaves) 1 tablespoon
                 vegetable oil 1 package Papa G's CURRY TOFU 14 2 tablespoon
-                vegan butter 2 tablespoon cilantro (for garnish)
+                vegan butter 2 tablespoon cilantro (for garnish) */}
               </Typography>
             </CardContent>
           </Card>

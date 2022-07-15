@@ -1,4 +1,5 @@
-import { Box, Grid } from '@mui/material';
+import React from 'react';
+import { Box } from '@mui/material';
 import PGlink from '../PGlink';
 
 const SiteHeadLogo = () => {

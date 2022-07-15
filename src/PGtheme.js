@@ -1,5 +1,5 @@
 import { createTheme } from '@mui/material';
-import { blue, green, red, yellow } from '@mui/material/colors';
+import { green, yellow } from '@mui/material/colors';
 
 const PGtheme = createTheme({
   palette: {

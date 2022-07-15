@@ -1,3 +1,4 @@
+import React from 'react';
 import PageHead from '../components/PageHead';
 import RouteContainer from '../components/RouteContainer';
 

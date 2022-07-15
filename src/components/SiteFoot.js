@@ -1,3 +1,4 @@
+import React from 'react';
 import { Box, Container, Typography } from '@mui/material';
 import {
   RiFacebookCircleFill,
@@ -66,7 +67,7 @@ const SiteFoot = () => {
         }}
       >
         <Typography variant='h7' color='primary.text'>
-          Papa G's Vegan Organics
+          Papa G&apo;s Vegan Organics
         </Typography>
         <Typography variant='h7' color='primary.text'>
           Portland, OR
