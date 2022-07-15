@@ -4,8 +4,6 @@ import SiteHeadLogo from './SiteHeadLogo';
 import PGlink from '../PGlink';
 import PGtooltip from './PGtooltip.tsx';
 import { navigation } from './navigation';
-import { GiCookingPot } from 'react-icons/gi';
-import { RiCloseFill } from 'react-icons/ri';
 import { MenuPanOpen } from './MenuPanOpen';
 import { MenuPanClosed } from './MenuPanClosed';
 
