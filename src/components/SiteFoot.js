@@ -1,6 +1,4 @@
 import { Box, Container, Typography } from '@mui/material';
-import { NavLink } from 'react-router-dom';
-import FlexContainer from './FlexContainer';
 import {
   RiFacebookCircleFill,
   RiTwitterFill,

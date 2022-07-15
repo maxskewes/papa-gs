@@ -1,6 +1,5 @@
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import React from 'react';
-import { red, yellow, green } from '@mui/material/colors';
 import RouteContainer from '../components/RouteContainer';
 import PageHead from '../components/PageHead';
 import SectionHead from '../components/SectionHead';

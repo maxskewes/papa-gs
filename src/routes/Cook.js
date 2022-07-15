@@ -1,6 +1,5 @@
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import React from 'react';
-import FlexContainer from '../components/FlexContainer';
 import PageHead from '../components/PageHead';
 import RecipeCard from '../components/RecipeCard';
 import RouteContainer from '../components/RouteContainer';
