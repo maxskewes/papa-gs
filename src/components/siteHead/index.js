@@ -30,6 +30,7 @@ const MenuToggle = ({ handleToggle, isOpen }) => {
         cursor: 'pointer',
         display: { xs: 'flex', md: 'none' },
         position: 'relative',
+        marginBottom: '4px',
       }}
     >
       {isOpen ? <MenuPanOpen /> : <MenuPanClosed />}
@@ -51,6 +52,10 @@ const LinkItem = ({ to, description, title }) => {
               xs: 0,
               sm: '0',
             },
+            color: 'white',
+            '&:hover': {
+              color: 'primary.main',
+            },
           }}
         >
           <Typography
@@ -66,18 +71,10 @@ const LinkItem = ({ to, description, title }) => {
                 md: '1.5rem',
                 lg: '2.5rem',
               },
-              color: 'white',
-              '&:hover': {
-                color: 'primary.main',
-              },
-              // '&:active': {
-              //   color: 'primary.main',
-              // },
             }}
           >
             {title}
           </Typography>
-
           <Typography
             variant='caption'
             display={{
@@ -85,13 +82,12 @@ const LinkItem = ({ to, description, title }) => {
               lg: 'none',
             }}
             sx={{
-              color: 'white',
               justifyContent: 'center',
               alignItems: 'center',
               textAlign: 'center',
               lineHeight: { xs: 1 },
               padding: {
-                xs: '4px 0',
+                xs: '3px',
               },
             }}
           >
@@ -108,7 +104,7 @@ const LinkContainer = ({ isOpen }) => {
     <Container>
       <Grid
         container
-        spacing={2}
+        // spacing={2}
         sx={{
           display: {
             xs: isOpen ? 'flex' : 'none',
@@ -123,7 +119,22 @@ const LinkContainer = ({ isOpen }) => {
       >
         {navigation.map((nav, index) => {
           return (
-            <Grid item xs={12} sm={2} md={4} key={index}>
+            <Grid
+              item
+              xs={12}
+              sm={2}
+              md={3}
+              key={index}
+              sx={{
+                margin: { xs: '4px', sm: '4px', md: '8px' },
+                minWidth: { xs: '100%', sm: 'auto' },
+                color: 'white',
+                '&:hover': {
+                  backgroundColor: { xs: 'primary.hover', sm: 'primary.text' },
+                  color: 'primary.main',
+                },
+              }}
+            >
               <LinkItem
                 to={nav.route}
                 key={index}

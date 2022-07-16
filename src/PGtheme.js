@@ -9,6 +9,7 @@ let PGtheme = createTheme({
       light: green[400],
       dark: green[900],
       text: green[900],
+      hover: green[800],
     },
     background: {
       main: '#212121',
