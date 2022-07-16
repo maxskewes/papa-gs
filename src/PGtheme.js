@@ -1,7 +1,7 @@
-import { createTheme } from '@mui/material';
+import { createTheme, responsiveFontSizes } from '@mui/material';
 import { green, yellow } from '@mui/material/colors';
 
-const PGtheme = createTheme({
+let PGtheme = createTheme({
   palette: {
     mode: 'light',
     primary: {
@@ -53,5 +53,7 @@ const PGtheme = createTheme({
     },
   },
 });
+
+PGtheme = responsiveFontSizes(PGtheme);
 
 export default PGtheme;

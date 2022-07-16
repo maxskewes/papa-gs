@@ -8,8 +8,7 @@ const RouteContainer = ({ children }) => {
         backgroundColor: 'primary.main',
         color: 'primary.text',
         minHeight: {
-          xs: null,
-          sm: 500,
+          xs: 500,
         },
       }}
     >

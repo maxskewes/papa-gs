@@ -1,18 +1,20 @@
 import React from 'react';
-import { Container } from '@mui/material';
+import { Container, Box } from '@mui/material';
 
 const FlexContainer = ({ children, column }) => {
   return (
-    <Container
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        ...(column === true && { flexDirection: 'column' }),
-      }}
-    >
-      {children}
-    </Container>
+    <Box>
+      <Container
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          ...(column === true && { flexDirection: 'column' }),
+        }}
+      >
+        {children}
+      </Container>
+    </Box>
   );
 };
 

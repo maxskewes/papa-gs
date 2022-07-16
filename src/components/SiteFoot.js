@@ -15,14 +15,14 @@ const SiteFoot = () => {
         sx={{
           width: '100%',
           display: 'flex',
-          flexDirection: { xs: 'column', sm: 'row' },
+          flexDirection: { xs: 'row', sm: 'row' },
           justifyContent: 'center',
           alignItems: 'center',
         }}
       >
         <a href='https://www.facebook.com/PapaGsVeganOrganicDeli'>
           <Typography
-            variant='h4'
+            variant='h2'
             sx={{ color: 'primary.text', padding: '16px', cursor: 'pointer' }}
           >
             <RiFacebookCircleFill sx={{ cursor: 'pointer' }} />
@@ -31,7 +31,7 @@ const SiteFoot = () => {
 
         <a href='https://twitter.com/papagees?lang=en'>
           <Typography
-            variant='h4'
+            variant='h2'
             sx={{ color: 'primary.text', padding: '16px', cursor: 'pointer' }}
           >
             <RiTwitterFill m={4} />
@@ -40,7 +40,7 @@ const SiteFoot = () => {
 
         <a href='https://www.instagram.com/explore/locations/986157498/papa-gs-pizza-and-pasta/?hl=en'>
           <Typography
-            variant='h4'
+            variant='h2'
             sx={{ color: 'primary.text', padding: '16px', cursor: 'pointer' }}
           >
             <RiInstagramFill m={4} />
@@ -49,7 +49,7 @@ const SiteFoot = () => {
 
         <PGlink to='/contact'>
           <Typography
-            variant='h4'
+            variant='h2'
             sx={{ color: 'primary.text', padding: '16px', cursor: 'pointer' }}
           >
             <RiMailFill m={4} />

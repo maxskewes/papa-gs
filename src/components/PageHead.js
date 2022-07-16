@@ -1,10 +1,9 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import FlexContainer from './FlexContainer';
 
-const PageHead = ({ title, subtitle }) => {
+const PageHead = ({ title, subtitle, subtitle2 }) => {
   return (
-    <Box>
       <FlexContainer column>
         <Typography variant='h2' sx={{ lineHeight: { xs: 1, lg: 1.5 } }}>
           {title}
@@ -12,8 +11,10 @@ const PageHead = ({ title, subtitle }) => {
         <Typography variant='h5' sx={{ textAlign: 'center', maxWidth: 900 }}>
           {subtitle}
         </Typography>
+        <Typography variant='h5' sx={{ textAlign: 'center', maxWidth: 900 }}>
+          {subtitle2}
+        </Typography>
       </FlexContainer>
-    </Box>
   );
 };
 
