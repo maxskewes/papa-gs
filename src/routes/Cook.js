@@ -1,5 +1,5 @@
-import { Box } from '@mui/material';
 import React from 'react';
+import { Grid } from '@mui/material';
 import PageHead from '../components/PageHead';
 import RecipeCard from '../components/RecipeCard';
 import RouteContainer from '../components/RouteContainer';
@@ -7,15 +7,13 @@ import RouteContainer from '../components/RouteContainer';
 const Cook = () => {
   return (
     <RouteContainer>
-      <PageHead
-        title={'Cook.'}
-        subtitle={
-          'On-line recipe book. Feel free to peruse or create your own and let us know!'
-        }
-      />
-      <Box>
+      <PageHead title={'Cook.'} subtitle={"Papa G's On-line recipe book."} />
+      <Grid container sx={{ maxWidth: { sm: '650px', lg: '1200px' } }}>
         <RecipeCard />
-      </Box>
+        <RecipeCard />
+        <RecipeCard />
+        <RecipeCard />
+      </Grid>
     </RouteContainer>
   );
 };

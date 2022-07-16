@@ -26,7 +26,7 @@ const Welcome = () => {
         />
         <FlexContainer column>
           <Typography>
-            I already teased you a few weeks ago, when I said that within a
+          &quot;I already teased you a few weeks ago, when I said that within a
             weekend, D and I ate three packages of flavored tofu from one local
             company. And you got to see a picture:
           </Typography>
@@ -38,13 +38,13 @@ const Welcome = () => {
             />
           </Box>
           <Typography>
-            This doesn&apos;t even give the tofu justice, but lemme just tell
+          &quot;This doesn&apos;t even give the tofu justice, but lemme just tell
             you right here and right now: this stuff will absolutely ROCK your
             world.
           </Typography>
           <Typography>
-            Now, here is the very sad news: it&apos;s only sold in Portland,
-            Oregon.
+          &quot;Now, here is the very sad news: it&apos;s only sold in Portland,
+            Oregon.&quot;
           </Typography>
           <PGlink to='http://www.greenveganliving.com/2011/10/product-review-papa-gs-organic-tofu.html'>
             <Typography variant='body2'>

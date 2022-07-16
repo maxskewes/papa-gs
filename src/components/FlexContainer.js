@@ -3,7 +3,7 @@ import { Container, Box } from '@mui/material';
 
 const FlexContainer = ({ children, column }) => {
   return (
-    <Box>
+    <Box sx={{ padding: '16px' }}>
       <Container
         sx={{
           display: 'flex',

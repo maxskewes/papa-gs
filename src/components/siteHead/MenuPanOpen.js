@@ -6,7 +6,7 @@ export const MenuPanOpen = () => {
       version='1.0'
       xmlns='http://www.w3.org/2000/svg'
       width='101.000000pt'
-      height='58.000000pt'
+      height='30.000000pt'
       viewBox='0 0 101.000000 58.000000'
       preserveAspectRatio='xMidYMid meet'
     >

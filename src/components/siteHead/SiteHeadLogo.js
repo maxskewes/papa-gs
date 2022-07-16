@@ -19,17 +19,17 @@ const SiteHeadLogo = () => {
           alignItems: 'center',
         }}
       >
-        <Box>
+        <Box sx={{ height: '120px', width: 'auto' }}>
           <img
-            height='120px'
+            height='100%'
             width='auto'
             src='/images/site-head-logo.png'
             alt="Papa G's logo"
           />
         </Box>
-        <Box>
+        <Box sx={{ height: '70px', width: 'auto' }}>
           <img
-            height='70px'
+            height='100%'
             width='auto'
             src='/images/vegan-organics.png'
             alt='Vegan Organics'
