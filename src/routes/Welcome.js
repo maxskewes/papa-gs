@@ -12,7 +12,7 @@ const Welcome = () => {
       <PageHead
         title='Welcome.'
         subtitle={"Papa G's is All Organic, All Vegan, and All Awesome."}
-        subtitle2={'Only available in Portland, OR'}
+        subtitle2={'Only available in Portland, OR.'}
       />
       <Box
         sx={{
