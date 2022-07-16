@@ -6,7 +6,7 @@ const SectionHead = ({ title, subtitle }) => {
   return (
     <Box pt={4}>
       <FlexContainer column>
-        <Typography variant='h4'>{title}</Typography>
+        <Typography variant='h4' sx={{ textAlign: 'center', maxWidth: 900 }}>{title}</Typography>
         <Typography variant='h6' sx={{ textAlign: 'center', maxWidth: 900 }}>
           {subtitle}
         </Typography>

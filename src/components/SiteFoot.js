@@ -67,7 +67,7 @@ const SiteFoot = () => {
         }}
       >
         <Typography variant='h7' color='primary.text'>
-          Papa G&apo;s Vegan Organics
+          Papa G&apos;s Vegan Organics
         </Typography>
         <Typography variant='h7' color='primary.text'>
           Portland, OR

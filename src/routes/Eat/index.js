@@ -1,5 +1,5 @@
 import React from 'react';
-import FlexContainer from '../../components/FlexContainer';
+import { Container, Grid } from '@mui/material';
 import PageHead from '../../components/PageHead';
 import RouteContainer from '../../components/RouteContainer';
 import SectionHead from '../../components/SectionHead';
@@ -18,12 +18,12 @@ const Eat = () => {
         title='Ingredients: 100% Organic'
         subtitle={"Always with love. And Chris' semen."}
       />
-      <FlexContainer>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-      </FlexContainer>
+        <Grid container sx={{ maxWidth: {sm: '650px', lg: '1200px'}}}>
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+        </Grid>
     </RouteContainer>
   );
 };
