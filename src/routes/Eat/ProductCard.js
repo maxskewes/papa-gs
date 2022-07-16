@@ -39,7 +39,7 @@ const ProductCard = () => {
               component='div'
               textAlign={'center'}
             >
-              menu MENU
+              Savory Sesame
             </Typography>
             <Typography
               variant='body2'
