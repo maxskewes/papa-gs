@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import PGlink from '../PGlink';
 
 const SiteHeadLogo = () => {
@@ -19,21 +19,19 @@ const SiteHeadLogo = () => {
           alignItems: 'center',
         }}
       >
-        <Box sx={{ height: '120px', width: 'auto' }}>
-          <img
+        <Box sx={{}}>
+          <Typography variant='h1' noWrap sx={{ color: 'pg.nav' }}>
+            PAPA G&apos;s
+          </Typography>
+          {/* <img
             height='100%'
             width='auto'
             src='/images/site-head-logo.png'
             alt="Papa G's logo"
-          />
+          /> */}
         </Box>
-        <Box sx={{ height: '70px', width: 'auto' }}>
-          <img
-            height='100%'
-            width='auto'
-            src='/images/vegan-organics.png'
-            alt='Vegan Organics'
-          />
+        <Box sx={{ margin: '16px', color: 'pg.nav' }}>
+          <Typography variant='h5'>Seasoned. Baked. Organic.</Typography>
         </Box>
       </Box>
     </PGlink>

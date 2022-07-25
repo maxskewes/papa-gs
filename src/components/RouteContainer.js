@@ -5,19 +5,20 @@ const RouteContainer = ({ children }) => {
   return (
     <Box
       sx={{
-        backgroundColor: 'primary.main',
+        backgroundColor: 'background.main',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
         color: 'primary.text',
-        minHeight: {
-          xs: 500,
-        },
       }}
     >
       <Box
         sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
+          minHeight: {
+            xs: 500,
+          },
+          maxWidth: '1200px',
         }}
       >
         {children}

@@ -1,12 +1,5 @@
 const navigation = [
   {
-    name: 'eat',
-    title: 'Eat.',
-    route: '/eat',
-    description: 'View our products.',
-    grid: 6,
-  },
-  {
     name: 'get',
     title: 'Get.',
     route: '/get',
@@ -19,6 +12,13 @@ const navigation = [
     route: '/cook',
     description: 'On-line recipe book.',
     grid: 4,
+  },
+  {
+    name: 'eat',
+    title: 'Eat.',
+    route: '/eat',
+    description: 'View our products.',
+    grid: 6,
   },
   {
     name: 'live',

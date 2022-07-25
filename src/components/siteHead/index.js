@@ -6,6 +6,7 @@ import PGtooltip from './PGtooltip.tsx';
 import { navigation } from './navigation';
 import { MenuPanOpen } from './MenuPanOpen';
 import { MenuPanClosed } from './MenuPanClosed';
+import ImageBG from './download.jpeg';
 
 const SiteHead = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,6 @@ const MenuToggle = ({ handleToggle, isOpen }) => {
       onClick={handleToggle}
       sx={{
         width: '50px',
-        color: 'white',
         cursor: 'pointer',
         display: { xs: 'flex', md: 'none' },
         position: 'relative',
@@ -52,7 +52,7 @@ const LinkItem = ({ to, description, title }) => {
               xs: 0,
               sm: '0',
             },
-            color: 'white',
+            color: 'pg.nav',
             '&:hover': {
               color: 'primary.main',
             },
@@ -68,7 +68,7 @@ const LinkItem = ({ to, description, title }) => {
               fontSize: {
                 xs: '1.75rem',
                 sm: '1.5rem',
-                md: '1.5rem',
+                md: '2.5rem',
                 lg: '2.5rem',
               },
             }}
@@ -76,7 +76,6 @@ const LinkItem = ({ to, description, title }) => {
             {title}
           </Typography>
           <Typography
-            variant='caption'
             display={{
               xs: 'flex',
               lg: 'none',
@@ -88,6 +87,7 @@ const LinkItem = ({ to, description, title }) => {
               lineHeight: { xs: 1 },
               padding: {
                 xs: '3px',
+                fontSize: '24px',
               },
             }}
           >
@@ -123,16 +123,15 @@ const LinkContainer = ({ isOpen }) => {
               item
               xs={12}
               sm={2}
-              md={3}
+              md={2}
               key={index}
               sx={{
                 margin: { xs: '4px', sm: '4px', md: '8px' },
                 minWidth: { xs: '100%', sm: 'auto' },
-                color: 'white',
-                '&:hover': {
-                  backgroundColor: { xs: 'primary.hover', sm: 'primary.text' },
-                  color: 'primary.main',
-                },
+                // '&:hover': {
+                //   backgroundColor: { xs: 'primary.hover', sm: 'primary.text' },
+                //   color: 'background.head',
+                // },
               }}
             >
               <LinkItem
@@ -151,7 +150,7 @@ const LinkContainer = ({ isOpen }) => {
 
 const SiteHeadContainer = ({ children }) => {
   return (
-    <Box sx={{ backgroundColor: 'primary.main', padding: '0 0 24px' }}>
+    <Box sx={{ backgroundColor: 'background.main', padding: '0 0 24px' }}>
       <Box
         sx={{
           bgcolor: 'background.head',

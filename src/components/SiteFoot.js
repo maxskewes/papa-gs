@@ -10,7 +10,7 @@ import PGlink from './PGlink';
 
 const SiteFoot = () => {
   return (
-    <Box bgcolor='background.main' padding='40px 0'>
+    <Box bgcolor='background.foot' padding='40px 0'>
       <Container
         sx={{
           width: '100%',
