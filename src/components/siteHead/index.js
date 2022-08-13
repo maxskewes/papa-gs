@@ -143,7 +143,10 @@ const LinkContainer = ({ isOpen }) => {
                 margin: { xs: '4px', sm: '4px', md: '8px' },
                 minWidth: { xs: '100%', sm: 'auto' },
                 '&:hover': {
-                  backgroundColor: { xs: 'primary.hover', sm: 'primary.text' },
+                  background: {
+                    xs: 'radial-gradient(rgba(36,36,36,.50) 40%, rgba(255,0,0,0) 70%)',
+                    md: 'transparent',
+                  },
                   color: 'background.head',
                 },
               }}

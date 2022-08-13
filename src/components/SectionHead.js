@@ -1,14 +1,15 @@
 import React from 'react';
+import '../styles.css';
 import { Typography } from '@mui/material';
 import FlexContainer from './FlexContainer';
 
 const SectionHead = ({ title, subtitle }) => {
   return (
     <FlexContainer column sx={{ paddingTop: 4 }}>
-      <Typography variant='h4' sx={{ textAlign: 'center', maxWidth: 900 }}>
+      <Typography variant='h4' className='shadow_sesame' sx={{ textAlign: 'center', maxWidth: 900 }}>
         {title}
       </Typography>
-      <Typography variant='h6' sx={{ textAlign: 'center', maxWidth: 900 }}>
+      <Typography variant='h6' sx={{ fontFamily: 'Ribeye', fontWeight: 400, textAlign: 'center', maxWidth: 900 }}>
         {subtitle}
       </Typography>
     </FlexContainer>
