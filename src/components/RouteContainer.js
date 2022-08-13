@@ -1,6 +1,5 @@
 import React from 'react';
-import { Box, Container } from '@mui/material';
-import Shade from '../assets/shade-route.png';
+import { Box } from '@mui/material';
 
 const RouteContainer = ({ children }) => {
   return (

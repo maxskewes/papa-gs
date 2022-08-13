@@ -1,16 +1,13 @@
-import { Box, Typography, Grid } from '@mui/material';
 import React from 'react';
+import { Box, Grid } from '@mui/material';
 import RouteContainer from '../components/RouteContainer';
 import PageHead from '../components/PageHead';
 import PGlink from '../components/PGlink';
 
-const BLACK = '#212121';
-const WHITE = '#FFFDFA';
 const YELLOW = '#deb20b';
 const RED = '#c44431';
 const BLUE = '#1c6a9a';
 const GREEN = '#6c7e19';
-const ORANGE = '#e26107';
 
 const Landing = () => {
   const ProductCard = ({
@@ -23,21 +20,21 @@ const Landing = () => {
     return (
       <Grid item xs={12} sm={6} lg={3}>
         <PGlink to={productPage}>
-            <Box
-              key={key}
-              backgroundColor={cardColor}
-              sx={{
-                padding: '16px 8px 0 16px',
-                borderRadius: '4px',
-              }}
-            >
-              <img
-                src={productImage}
-                alt={productName}
-                position='absolute'
-                width='100%'
-              />
-            </Box>
+          <Box
+            key={key}
+            backgroundColor={cardColor}
+            sx={{
+              padding: '16px 8px 0 16px',
+              borderRadius: '4px',
+            }}
+          >
+            <img
+              src={productImage}
+              alt={productName}
+              position='absolute'
+              width='100%'
+            />
+          </Box>
         </PGlink>
       </Grid>
     );

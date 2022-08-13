@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles.css';
 import { Grid, Box, Typography } from '@mui/material';
 import RouteContainer from '../components/RouteContainer';
-import RecipeLink from '../components/RecipeLink';
 
 const Taco = () => {
   return (

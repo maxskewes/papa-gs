@@ -2,8 +2,6 @@ import React from 'react';
 import { Grid, Box, Typography } from '@mui/material';
 import RouteContainer from '../components/RouteContainer';
 
-import RecipeLink from '../components/RecipeLink';
-
 const Sesame = () => {
   return (
     <RouteContainer>
