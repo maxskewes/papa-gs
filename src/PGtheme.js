@@ -1,14 +1,5 @@
 import { createTheme, responsiveFontSizes } from '@mui/material';
-import {
-  red,
-  yellow,
-  green,
-  blue,
-  purple,
-  orange,
-  pink,
-  brown,
-} from '@mui/material/colors';
+import { brown } from '@mui/material/colors';
 
 const BLACK = '#212121';
 const WHITE = '#FFFDFA';
@@ -18,18 +9,21 @@ const RED = '#c44431';
 const BLUE = '#1c6a9a';
 const GREEN = '#6c7e19';
 const ORANGE = '#e26107';
+const SOFT_BLACK = '#242424';
+const TAWNY = '#dcc098';
+const RICH_TAWNY = '#96670e';
 
 let PGtheme = createTheme({
   palette: {
     mode: 'light',
-    pg: { black: BLACK, white: WHITE, nav: NAV },
+    pg: { softBlack: SOFT_BLACK, black: BLACK, white: WHITE, nav: NAV },
     primary: {
-      main: green[800],
-      light: red[400],
-      dark: red[500],
-      text: YELLOW,
-      hover: red[800],
-      test: blue[300],
+      main: GREEN,
+      light: RED,
+      dark: RED,
+      text: SOFT_BLACK,
+      hover: RED,
+      test: BLUE,
     },
     flash: {
       yellow: YELLOW,
@@ -37,6 +31,8 @@ let PGtheme = createTheme({
       blue: BLUE,
       green: GREEN,
       orange: ORANGE,
+      tawny: TAWNY,
+      richTawny: RICH_TAWNY,
     },
     background: {
       main: '#f7e8b7',
@@ -49,27 +45,45 @@ let PGtheme = createTheme({
     fontWeightRegular: 400,
     fontWeightMedium: 400,
     fontWeightBold: 400,
-    fontFamily: "'Amatic SC', 'Corben', 'Permanent Marker', cursive",
+    fontFamily: "'Ribeye Marrow',  cursive",
     h1: {
+      fontFamily: "'Ribeye Marrow',  cursive",
       fontWeight: 700,
     },
     h2: {
+      fontFamily: "'Ribeye Marrow',  cursive",
       fontWeight: 700,
     },
     h3: {
+      fontFamily: "'Ribeye Marrow',  cursive",
       fontWeight: 700,
     },
     h4: {
+      fontFamily: "'Ribeye Marrow',  cursive",
       fontWeight: 700,
     },
     h5: {
+      fontFamily: "'Ribeye Marrow',  cursive",
       fontWeight: 700,
     },
     h6: {
+      fontFamily: "'Ribeye Marrow',  cursive",
       fontWeight: 700,
+    },
+    recipe: {
+      fontFamily: 'Ribeye',
+      fontWeight: 400,
+      fontSize: '16px',
+      textAlign: 'center',
     },
     caption: {
       fontWeight: 400,
+    },
+    footer: {
+      fontFamily: 'Ribeye Marrow',
+      fontWeight: 700,
+      fontSize: '24px',
+      color: TAWNY,
     },
     navLink: {
       fontWeight: 700,

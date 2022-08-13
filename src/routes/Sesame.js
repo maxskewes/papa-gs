@@ -1,56 +1,71 @@
 import React from 'react';
 import { Grid, Box, Typography } from '@mui/material';
 import RouteContainer from '../components/RouteContainer';
-import PGlink from '../components/PGlink';
+
+import RecipeLink from '../components/RecipeLink';
 
 const Sesame = () => {
   return (
     <RouteContainer>
-      <Grid container sx={{ padding: ' 0 100px'}}>
-        <Grid item xs={12} sm={4} sx={{ zIndex: 2}}>
-          <Box sx={{ zIndex: 2}}>
+      <Typography variant='h1' className='shadow_sesame' sx={{ textAlign: 'center' }}>
+        Savory Sesame Tofu
+      </Typography>
+      <Grid container sx={{ alignItems: 'center' }}>
+        <Grid item xs={12} md={6}>
+          <Box
+            sx={{
+              margin: {
+                xs: '0 0 0 20px',
+                md: 0,
+              },
+            }}
+          >
             <img
-              src='/images/products/Savory_Sesame_Pack_B.png'
-              alt='Savory Sesame'
               width='100%'
-              zIndex={2}
-            />
-          </Box>
-        </Grid>
-        <Grid item xs={12} sm={4} sx={{ zIndex: 0}}>
-          <Box sx={{ zIndex: 0, display: 'flex', alignItems:'center', alignContent:'center', justifyContent:'center', minHeight:'100%', marginLeft: '-250px', marginTop:'30px' }}>
-            <img
-              src='/images/on_board/Savory_Sesame_On_Board_Flipped.png'
-              alt='Savory Sesame'
-              width='70%'
-              zIndex= {0}
+              src='/images/pack-over-board/sesame_PB.png'
+              alt='Savory Sesame Tofu'
             />
           </Box>
         </Grid>
         <Grid
           item
-          container
-          direction='column'
-          justifyContent='center'
-          alignItems='center'
           xs={12}
-          sm={4}
+          md={6}
+          sx={{
+            textAlign: {
+              xs: 'center',
+              md: 'left',
+            },
+            margin: {
+              xs: '0 40px',
+              md: 0,
+            },
+          }}
         >
-          <Grid item>
-            <PGlink to='/cook'>
-              <Typography variant='h2' textShadow='-1px 1px 10px rgba(0, 0, 0, 0.75)'>
-                Check out our on-line recipe book.
-              </Typography>
-            </PGlink>
-          </Grid>
-
-          <Grid item>
-            <Typography variant='h3'>Ingredients:</Typography>
-            <Typography variant='h4'>
-              Shit, Piss, Fuck, Cunt, Cocksucker, Motherfucker, Organic Tits
-            </Typography>
-            <Typography variant='h3'>Great on dead Jews!</Typography>
-          </Grid>
+          <Typography
+            variant='h3'
+            className='shade_sesame'
+            sx={{ fontFamily: 'Ribeye', margin: 1 }}
+          >
+            Savory Sesame Tofu
+          </Typography>
+          <Typography
+            variant='h4'
+            sx={{ fontFamily: 'Ribeye', margin: '16px 0 4px 64px' }}
+          >
+            Some stuff about it:
+          </Typography>
+          <Typography
+            variant='h3'
+            className='shade_sesame'
+            sx={{
+              fontFamily: 'Ribeye Marrow',
+              fontWeight: 400,
+              margin: '4px 32px 32px',
+            }}
+          >
+            It slices, it dices, it wins the election...
+          </Typography>
         </Grid>
       </Grid>
     </RouteContainer>

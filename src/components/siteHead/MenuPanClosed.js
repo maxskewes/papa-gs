@@ -12,7 +12,7 @@ export const MenuPanClosed = () => {
     >
       <g
         transform='translate(0.000000,69.000000) scale(0.100000,-0.100000)'
-        fill='white'
+        fill='#dcc098'
         stroke='none'
       >
         <path

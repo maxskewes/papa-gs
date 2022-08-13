@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../../styles.css';
 import { Box, Container, Typography, Zoom, Grid } from '@mui/material';
 import SiteHeadLogo from './SiteHeadLogo';
 import PGlink from '../PGlink';
@@ -6,7 +7,6 @@ import PGtooltip from './PGtooltip.tsx';
 import { navigation } from './navigation';
 import { MenuPanOpen } from './MenuPanOpen';
 import { MenuPanClosed } from './MenuPanClosed';
-import ImageBG from './download.jpeg';
 
 const SiteHead = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,6 +42,12 @@ const LinkItem = ({ to, description, title }) => {
   return (
     <PGlink to={to}>
       <PGtooltip
+        sx={{
+          display: {
+            xs: 'none',
+            md: 'block',
+          },
+        }}
         title={description}
         TransitionComponent={Zoom}
         TransitionProps={{ timeout: 300 }}
@@ -59,12 +65,15 @@ const LinkItem = ({ to, description, title }) => {
           }}
         >
           <Typography
+            className='header'
             display='flex'
             justifyContent={{ xs: 'space-around' }}
             alignItems={{ xs: 'center', sm: 'baseline' }}
             sx={{
+              color: 'flash.tawny',
+              fontFamily: 'Ribeye Marrow',
+              fontWeight: 400,
               lineHeight: { xs: 1, lg: 1.5 },
-              fontWeight: 700,
               fontSize: {
                 xs: '1.75rem',
                 sm: '1.5rem',
@@ -76,18 +85,23 @@ const LinkItem = ({ to, description, title }) => {
             {title}
           </Typography>
           <Typography
+            className='description'
             display={{
               xs: 'flex',
-              lg: 'none',
+              md: 'none',
             }}
             sx={{
+              color: 'flash.tawny',
+              fontFamily: 'Ribeye',
+              textTransform: 'uppercase',
+              fontSize: '14px',
+              fontWeight: 400,
               justifyContent: 'center',
               alignItems: 'center',
               textAlign: 'center',
               lineHeight: { xs: 1 },
               padding: {
-                xs: '3px',
-                fontSize: '24px',
+                xs: '4px',
               },
             }}
           >
@@ -128,10 +142,10 @@ const LinkContainer = ({ isOpen }) => {
               sx={{
                 margin: { xs: '4px', sm: '4px', md: '8px' },
                 minWidth: { xs: '100%', sm: 'auto' },
-                // '&:hover': {
-                //   backgroundColor: { xs: 'primary.hover', sm: 'primary.text' },
-                //   color: 'background.head',
-                // },
+                '&:hover': {
+                  backgroundColor: { xs: 'primary.hover', sm: 'primary.text' },
+                  color: 'background.head',
+                },
               }}
             >
               <LinkItem
@@ -150,11 +164,18 @@ const LinkContainer = ({ isOpen }) => {
 
 const SiteHeadContainer = ({ children }) => {
   return (
-    <Box sx={{ backgroundColor: 'background.main', padding: '0 0 24px' }}>
+    // <Box sx={{ backgroundColor: 'background.main', padding: '0 0 24px' }}>
+    <Box
+      sx={{
+        background: 'radial-gradient(circle, #c44431 60%, #212121 100%)',
+        boxShadow: '0px 5px 25px #242424',
+        position: 'relative',
+      }}
+    >
       <Box
         sx={{
-          bgcolor: 'background.head',
-          boxShadow: '-1px -1px 11px 0px rgba(0,13,7,0.87)',
+          background:
+            'linear-gradient( to top, rgba(36,36,36,.2), rgba(255,0,0,0), rgba(36,36,36,.5))',
         }}
       >
         <Container

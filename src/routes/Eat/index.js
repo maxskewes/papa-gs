@@ -1,9 +1,7 @@
 import React from 'react';
-import { Grid } from '@mui/material';
 import PageHead from '../../components/PageHead';
 import RouteContainer from '../../components/RouteContainer';
 import SectionHead from '../../components/SectionHead';
-import ProductCard from './ProductCard';
 
 const Eat = () => {
   return (
@@ -16,14 +14,8 @@ const Eat = () => {
       />
       <SectionHead
         title='Ingredients: 100% Organic'
-        subtitle={"Always with love. And Chris' semen."}
+        subtitle={'Always with love.'}
       />
-        <Grid container sx={{ maxWidth: {sm: '650px', lg: '1200px'}}}>
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-        </Grid>
     </RouteContainer>
   );
 };

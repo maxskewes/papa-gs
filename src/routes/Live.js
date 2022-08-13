@@ -8,7 +8,7 @@ const Live = () => {
       <PageHead
         title={'Live.'}
         subtitle={
-          'A sustainable and harm-free existence, prolonging the life of the planet, etc., despite the fact that nobody else gives a shit and our future looks bleak and depressing as fuck most of the time.'
+          'A sustainable and harm-free existence whilst prolonging the life of the planet, despite the fact that nobody else cares.'
         }
       />
     </RouteContainer>

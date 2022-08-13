@@ -9,7 +9,7 @@ const Get = () => {
       <PageHead
         title={'Get.'}
         subtitle={
-          'Our products are available in peurveyors of conscious grocery products as well as by special order. Let us know how much of this shit you can stuff your fat face in. '
+          'Our products are available in peurveyors of conscious grocery products as well as by special order. Stick your face in it. '
         }
       />
       <Box sx={{ padding: '16px', maxWidth: { xs: '200px', sm: '300px' } }}>

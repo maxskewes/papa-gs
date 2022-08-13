@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles.css'
 import { Box, Typography } from '@mui/material';
 import PGlink from '../PGlink';
 
@@ -20,18 +21,17 @@ const SiteHeadLogo = () => {
         }}
       >
         <Box sx={{}}>
-          <Typography variant='h1' noWrap sx={{ color: 'pg.nav' }}>
-            PAPA G&apos;s
-          </Typography>
-          {/* <img
-            height='100%'
-            width='auto'
-            src='/images/site-head-logo.png'
+          <img
+            height='auto'
+            width='200px'
+            src='/images/papa-heart.png'
             alt="Papa G's logo"
-          /> */}
+          />
         </Box>
         <Box sx={{ margin: '16px', color: 'pg.nav' }}>
-          <Typography variant='h5'>Seasoned. Baked. Organic.</Typography>
+          <Typography variant='h5' className='slogan' sx={{ fontFamily: 'Ribeye', fontWeight: 400, color: 'flash.tawny' }}>
+            Seasoned. Baked. Organic.
+          </Typography>
         </Box>
       </Box>
     </PGlink>

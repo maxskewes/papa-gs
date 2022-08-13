@@ -12,7 +12,7 @@ export const MenuPanOpen = () => {
     >
       <g
         transform='translate(0.000000,58.000000) scale(0.100000,-0.100000)'
-        fill='white'
+        fill='#dcc098'
         stroke='none'
       >
         <path
