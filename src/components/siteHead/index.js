@@ -173,6 +173,7 @@ const SiteHeadContainer = ({ children }) => {
         background: 'radial-gradient(circle, #c44431 60%, #212121 100%)',
         boxShadow: '0px 5px 25px #242424',
         position: 'relative',
+        maxHeight: '200px'
       }}
     >
       <Box
@@ -197,6 +198,7 @@ const SiteHeadContainer = ({ children }) => {
         </Container>
       </Box>
     </Box>
+    //  </Box>
   );
 };
 

@@ -20,11 +20,10 @@ const SiteHeadLogo = () => {
           alignItems: 'center',
         }}
       >
-        <Box sx={{}}>
+        <Box sx={{ display: 'flex', alignItems: 'flex-start', height: '200px', marginTop: '-20px' }}>
           <img
-            height='auto'
-            width='200px'
-            src='/images/papa-heart.png'
+            width='300px'
+            src='/images/logo-yellow-halo.png'
             alt="Papa G's logo"
           />
         </Box>
