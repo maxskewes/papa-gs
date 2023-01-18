@@ -3,6 +3,8 @@ import '../styles.css';
 import { Button, Menu, MenuItem, Box, Typography } from '@mui/material';
 import PGlink from './PGlink';
 
+const RICH_TAWNY = '#593c05';
+
 export default function VarietiesDropdown() {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = anchorEl;
@@ -23,7 +25,7 @@ export default function VarietiesDropdown() {
         aria-controls={open ? 'varieties-list' : undefined}
         aria-haspopup='true'
         aria-expanded={open ? 'true' : undefined}
-      //  onClick={handleClick}
+        //  onClick={handleClick}
         onMouseEnter={handleOpen}
       >
         <Typography
@@ -53,22 +55,81 @@ export default function VarietiesDropdown() {
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
-        // MenuListProps={{
-        //   'aria-labelledby': 'varieties-list',
-        // }}
+        MenuListProps={{
+          backgroundColor: 'transparent',
+          'aria-labelledby': 'varieties-list',
+        }}
       >
-        <Box sx={{ backgroundColor: 'red' }}>
+        <Box
+          sx={{
+            background: 'radial-gradient( #f7e5ba 60%, #e8ba4d 100%)',
+            textDecoration: 'none',
+            marginTop: '-8px',
+            marginBottom: '-8px',
+            backgroundColor: 'green',
+          }}
+        >
           <MenuItem onClick={handleClose}>
-            <PGlink to='/original-recipe'>Original Recipe</PGlink>
+            <PGlink to='/original-recipe'>
+              <Typography
+                sx={{
+                  color: RICH_TAWNY,
+                  fontSize: 12,
+                  fontFamily: 'Ribeye',
+                  fontWeight: 600,
+                  textTransform: 'uppercase',
+                }}
+              >
+                Original Recipe
+              </Typography>
+            </PGlink>
           </MenuItem>
           <MenuItem onClick={handleClose}>
-            <PGlink to='/savory-sesame'>Savory Sesame</PGlink>
+            <PGlink to='/savory-sesame'>
+              <Typography
+                sx={{
+                  color: RICH_TAWNY,
+                  fontSize: 12,
+                  fontFamily: 'Ribeye',
+                  fontWeight: 600,
+                  textTransform: 'uppercase',
+                }}
+              >
+                Savory Sesame
+              </Typography>
+            </PGlink>
           </MenuItem>
           <MenuItem onClick={handleClose}>
-            <PGlink to='/taco-tofu'>Taco Tofu</PGlink>
+            <PGlink to='/taco-tofu'>
+              {' '}
+              <Typography
+                sx={{
+                  color: RICH_TAWNY,
+                  fontSize: 12,
+                  fontFamily: 'Ribeye',
+                  fontWeight: 600,
+                  textTransform: 'uppercase',
+                }}
+              >
+                Taco Tofu
+              </Typography>
+            </PGlink>
           </MenuItem>
           <MenuItem onClick={handleClose}>
-            <PGlink to='/bbq'>Barbeque</PGlink>
+            <PGlink to='/bbq'>
+              {' '}
+              <Typography
+                sx={{
+                  color: RICH_TAWNY,
+                  fontSize: 12,
+                  fontFamily: 'Ribeye',
+                  fontWeight: 600,
+                  textTransform: 'uppercase',
+                }}
+              >
+                Barbeque
+              </Typography>
+            </PGlink>
           </MenuItem>
         </Box>
       </Menu>

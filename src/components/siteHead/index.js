@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../styles.css';
 import { Box, Container, Typography, Zoom } from '@mui/material';
-import SiteHeadLogo from './SiteHeadLogo';
+import { SiteHeadLogo, SiteHeadSlogan } from './SiteHeadLogo';
 import PGlink from '../PGlink';
 import PGtooltip from './PGtooltip.tsx';
 import { navigation } from './navigation';
@@ -16,6 +16,7 @@ const SiteHead = () => {
   return (
     <SiteHeadContainer>
       <SiteHeadLogo />
+      <SiteHeadSlogan />
       <MenuToggle handleToggle={handleToggle} isOpen={isOpen} />
       <LinkContainer isOpen={isOpen} />
     </SiteHeadContainer>
@@ -190,7 +191,6 @@ const LinkContainer = ({ isOpen }) => {
 
 const SiteHeadContainer = ({ children }) => {
   return (
-    // <Box sx={{ backgroundColor: 'background.main', padding: '0 0 24px' }}>
     <Box
       sx={{
         background: 'radial-gradient(circle, #c44431 60%, #212121 100%)',
@@ -211,7 +211,7 @@ const SiteHeadContainer = ({ children }) => {
             width: '100%',
             display: 'flex',
             flexDirection: {
-  
+              xs: 'row-reverse',
               md: 'row',
             },
             justifyContent: 'space-between',
@@ -222,7 +222,6 @@ const SiteHeadContainer = ({ children }) => {
         </Container>
       </Box>
     </Box>
-    //  </Box>
   );
 };
 

@@ -47,7 +47,7 @@ const Landing = () => {
   return (
     <RouteContainer>
       <PageHead title={'All Vegan. All Awesome.'} />
-      <Grid container spacing={2} padding={2}>
+      <Grid container spacing={2} sx={{ padding:  { xs: '24px', sm: '48px' },}}>
         <ProductCard
           key='1'
           productName={'Original Recipe'}
@@ -79,16 +79,18 @@ const Landing = () => {
       </Grid>
       <Box
         sx={{
-          width: '500px',
+          width: '400px',
           display: 'flex',
           alignContent: 'center',
           justifyContent: 'center',
+          opacity:'85%'
         }}
       >
         <img
-          src={'/images/dietary_icons.png'}
+          src={'/images/dietary_icons_120dpi.png'}
           alt='dietary icon list'
           width='100%'
+       
         />
       </Box>
     </RouteContainer>
