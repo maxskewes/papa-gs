@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles.css'
+import '../../styles.css';
 import { Box, Typography } from '@mui/material';
 import PGlink from '../PGlink';
 
@@ -20,15 +20,19 @@ const SiteHeadLogo = () => {
           alignItems: 'center',
         }}
       >
-        <Box sx={{ display: 'flex', alignItems: 'flex-start', height: '200px', marginTop: '-20px' }}>
-          <img
-            width='300px'
-            src='/images/logo-yellow-halo.png'
-            alt="Papa G's logo"
-          />
-        </Box>
+        <Box
+          width={{xs: '200px', sm: '250px', md: '300px', lg:'350px'}}
+          marginTop={{ xs: '0',sm: '-10px', lg:'-30px' }}
+          component='img'
+          src='/images/logo-yellow-halo.png'
+          alt="Papa G's logo"
+        />
         <Box sx={{ margin: '16px', color: 'pg.nav' }}>
-          <Typography variant='h5' className='slogan' sx={{ fontFamily: 'Ribeye', fontWeight: 400, color: 'flash.tawny' }}>
+          <Typography
+            variant='h5'
+            className='slogan'
+            sx={{ fontFamily: 'Ribeye', fontWeight: 400, color: 'flash.tawny' }}
+          >
             Seasoned. Baked. Organic.
           </Typography>
         </Box>

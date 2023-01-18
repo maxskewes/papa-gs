@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from '@mui/material';
+import { Grid } from '@mui/material';
 import PageHead from '../components/PageHead';
 import RouteContainer from '../components/RouteContainer';
 
@@ -8,13 +8,108 @@ const Get = () => {
     <RouteContainer>
       <PageHead
         title={'Get.'}
-        subtitle={
-          'Our products are available in peurveyors of conscious grocery products as well as by special order. Stick your face in it. '
-        }
+        subtitle={'Our products are available from these fine grocers.'}
       />
-      <Box sx={{ padding: '16px', maxWidth: { xs: '200px', sm: '300px' } }}>
-        <img src='/images/new-seasons.png' alt='New Seasons' width='100%' />
-      </Box>
+      <Grid
+        margin={'1rem'}
+        container
+        spacing={2}
+        display='flex'
+        justifyContent='center'
+        alignItems='center'
+      >
+        <Grid item sx={{ maxWidth: { xs: '200px', sm: '300px' } }}>
+          <a
+            href='https://www.newseasonsmarket.com/'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <img
+              src='/images/grocers/new-seasons.png'
+              alt='New Seasons'
+              width='100%'
+            />
+          </a>
+        </Grid>
+        <Grid item sx={{ maxWidth: { xs: '200px', sm: '300px' } }}>
+          <a
+            href='https://www.cutieebuys.club/'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <img
+              src='/images/grocers/cutiee-buys-coffee-beer.png'
+              alt='Cutiee Buys / Coffee Beer'
+              width='100%'
+            />
+          </a>
+        </Grid>
+        <Grid item sx={{ maxWidth: { xs: '150px', sm: '200px' } }}>
+          <a
+            href='https://foodfightgrocery.com/'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <img
+              src='/images/grocers/food-fight.png'
+              alt='Food Fight'
+              width='100%'
+            />
+          </a>
+        </Grid>
+        <Grid item sx={{ maxWidth: { xs: '200px', sm: '300px' } }}>
+          <a
+            href='https://www.peoples.coop/'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <img
+              src='/images/grocers/peoples-food-coop.png'
+              alt="People's Food Co-op"
+              width='100%'
+            />
+          </a>
+        </Grid>
+        <Grid item sx={{ maxWidth: { xs: '150px', sm: '200px' } }}>
+          <a
+            href='https://www.facebook.com/beaumontvillagemarket/'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <img
+              src='/images/grocers/beaumont-market.png'
+              alt='Beaumont Market'
+              width='100%'
+            />
+          </a>
+        </Grid>
+        <Grid item sx={{ maxWidth: { xs: '200px', sm: '300px' } }}>
+          <a
+            href='https://secretpizzasociety.com/'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <img
+              src='/images/grocers/secret-pizza-society.png'
+              alt='Secret Pizza Society'
+              width='100%'
+            />
+          </a>
+        </Grid>
+        <Grid item sx={{ maxWidth: { xs: '200px', sm: '300px' } }}>
+          <a
+            href='https://www.instacart.com/'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <img
+              src='/images/grocers/insta-cart.png'
+              alt='Instacart link'
+              width='100%'
+            />
+          </a>
+        </Grid>
+      </Grid>
     </RouteContainer>
   );
 };

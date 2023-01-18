@@ -7,6 +7,7 @@ import PGtooltip from './PGtooltip.tsx';
 import { navigation } from './navigation';
 import { MenuPanOpen } from './MenuPanOpen';
 import { MenuPanClosed } from './MenuPanClosed';
+import VarietiesDropdown from '../VarietiesDropdown';
 
 const SiteHead = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,7 @@ const SiteHead = () => {
 
   return (
     <SiteHeadContainer>
-      <SiteHeadLogo sx={{ padding: '0 300px 0 0', margin: '0 300px 0 0' }} />
+      <SiteHeadLogo />
       <MenuToggle handleToggle={handleToggle} isOpen={isOpen} />
       <LinkContainer isOpen={isOpen} />
     </SiteHeadContainer>
@@ -116,7 +117,7 @@ const LinkItem = ({ to, description, title }) => {
 const LinkContainer = ({ isOpen }) => {
   return (
     <Container>
-      <Grid
+      <Box
         container
         // spacing={2}
         sx={{
@@ -126,14 +127,36 @@ const LinkContainer = ({ isOpen }) => {
           },
           justifyContent: {
             xs: 'center',
+            md: 'space-around',
           },
           alignItems: 'center',
           flexDirection: { xs: 'column', sm: 'row' },
         }}
       >
+        <Box
+          item
+          xs={12}
+          sm={2}
+          md={2}
+          key={'varieties'}
+          sx={{
+            margin: { xs: '4px', sm: '4px', md: '8px' },
+            minWidth: { xs: '100%', sm: 'auto' },
+            '&:hover': {
+              background: {
+                xs: 'radial-gradient(rgba(36,36,36,.50) 40%, rgba(255,0,0,0) 70%)',
+                md: 'transparent',
+              },
+              color: 'background.head',
+            },
+          }}
+        >
+          <VarietiesDropdown />
+        </Box>
+
         {navigation.map((nav, index) => {
           return (
-            <Grid
+            <Box
               item
               xs={12}
               sm={2}
@@ -157,10 +180,10 @@ const LinkContainer = ({ isOpen }) => {
                 description={nav.description}
                 title={nav.title}
               />
-            </Grid>
+            </Box>
           );
         })}
-      </Grid>
+      </Box>
     </Container>
   );
 };
@@ -173,11 +196,12 @@ const SiteHeadContainer = ({ children }) => {
         background: 'radial-gradient(circle, #c44431 60%, #212121 100%)',
         boxShadow: '0px 5px 25px #242424',
         position: 'relative',
-        maxHeight: '200px'
+        maxHeight: '200px',
       }}
     >
       <Box
         sx={{
+          maxHeight: '200px',
           background:
             'linear-gradient( to top, rgba(36,36,36,.2), rgba(255,0,0,0), rgba(36,36,36,.5))',
         }}
@@ -187,7 +211,7 @@ const SiteHeadContainer = ({ children }) => {
             width: '100%',
             display: 'flex',
             flexDirection: {
-              xs: 'column',
+  
               md: 'row',
             },
             justifyContent: 'space-between',

@@ -9,8 +9,8 @@ const Contact = () => {
     <RouteContainer>
       <PageHead title={'Contact.'} />
       <FlexContainer column>
-        <Typography>503 555-5555</Typography>
-        <Typography>papagees@gmail.com</Typography>
+        <Typography>503 664-0274</Typography>
+        <Typography>papagstofu@secretsocietyorgaincs.com</Typography>
       </FlexContainer>
     </RouteContainer>
   );

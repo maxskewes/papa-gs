@@ -73,6 +73,9 @@ const Landing = () => {
           cardColor={BLUE}
         />
       </Grid>
+      <Box>
+        Put in icons from back label
+      </Box>
     </RouteContainer>
   );
 };
