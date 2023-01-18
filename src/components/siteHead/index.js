@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../../styles.css';
-import { Box, Container, Typography, Zoom, Grid } from '@mui/material';
+import { Box, Container, Typography, Zoom } from '@mui/material';
 import SiteHeadLogo from './SiteHeadLogo';
 import PGlink from '../PGlink';
 import PGtooltip from './PGtooltip.tsx';
