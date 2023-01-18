@@ -20,7 +20,7 @@ const Sesame = () => {
           >
             <img
               width='100%'
-              src='/images/pack-over-board/sesame_PB.png'
+              src='/images/pack-over-board/sesame_pack_on_board_120psi.png'
               alt='Savory Sesame Tofu'
             />
           </Box>

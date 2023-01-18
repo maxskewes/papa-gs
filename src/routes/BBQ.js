@@ -20,7 +20,7 @@ const BBQ = () => {
           >
             <img
               width='100%'
-              src='/images/pack-over-board/bbq_PB.png'
+              src='/images/pack-over-board/bbq_pack_on_board_120psi.png'
               alt='Organic BBQ Tofu'
             />
           </Box>

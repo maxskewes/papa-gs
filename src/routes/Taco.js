@@ -25,7 +25,7 @@ const Taco = () => {
           >
             <img
               width='100%'
-              src='/images/pack-over-board/taco_PB.png'
+              src='/images/pack-over-board/taco_pack_on_board_120psi.png'
               alt='Organic Taco Tofu'
             />
           </Box>

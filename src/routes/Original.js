@@ -21,7 +21,7 @@ const Original = () => {
           >
             <img
               width='100%'
-              src='/images/pack-over-board/original_PB.png'
+              src='/images/pack-over-board/original_pack_on_board_120psi.png'
               alt='Original Recipe Tofu'
             />
           </Box>

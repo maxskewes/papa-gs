@@ -18,14 +18,18 @@ const Landing = () => {
     cardColor,
   }) => {
     return (
-      <Grid item xs={12} sm={6} lg={3}>
+      <Grid item xs={6} md={3}>
         <PGlink to={productPage}>
           <Box
             key={key}
             backgroundColor={cardColor}
             sx={{
-              padding: '16px 8px 0 16px',
+              padding: '4% 0 4% 4%',
               borderRadius: '4px',
+              height: '100%',
+              display: 'flex',
+              alignContent: 'center',
+              justifyContent: 'center',
             }}
           >
             <img
@@ -48,33 +52,44 @@ const Landing = () => {
           key='1'
           productName={'Original Recipe'}
           productPage={'/original-recipe'}
-          productImage={'/images/trimmed/Original_Pack_A_Fitted.png'}
+          productImage={'/images/trimmed/original_pack_120psi.png'}
           cardColor={YELLOW}
         />
         <ProductCard
           key='1'
           productName={'Savory Sesame'}
           productPage={'/savory-sesame'}
-          productImage={'/images/trimmed/Savory_Sesame_Pack_A_Fitted.png'}
+          productImage={'/images/trimmed/sesame_pack_120psi.png'}
           cardColor={GREEN}
         />
         <ProductCard
           key='1'
           productName={'Taco Tofu'}
           productPage={'/taco-tofu'}
-          productImage={'/images/trimmed/TACO_Pack_A_Fitted.png'}
+          productImage={'/images/trimmed/taco_pack_120psi.png'}
           cardColor={RED}
         />
         <ProductCard
           key='1'
           productName={'BBQ'}
           productPage={'/bbq'}
-          productImage={'/images/trimmed/BBQ_Pack_A_Fitted.png'}
+          productImage={'/images/trimmed/bbq_pack_120psi.png'}
           cardColor={BLUE}
         />
       </Grid>
-      <Box>
-        Put in icons from back label
+      <Box
+        sx={{
+          width: '500px',
+          display: 'flex',
+          alignContent: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <img
+          src={'/images/dietary_icons.png'}
+          alt='dietary icon list'
+          width='100%'
+        />
       </Box>
     </RouteContainer>
   );
