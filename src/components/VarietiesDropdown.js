@@ -101,7 +101,6 @@ export default function VarietiesDropdown() {
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <PGlink to='/taco-tofu'>
-              {' '}
               <Typography
                 sx={{
                   color: RICH_TAWNY,

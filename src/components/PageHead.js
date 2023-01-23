@@ -3,6 +3,8 @@ import '../styles.css';
 import { Typography } from '@mui/material';
 import FlexContainer from './FlexContainer';
 
+const RICH_TAWNY = '#593c05';
+
 const PageHead = ({ title, subtitle, subtitle2 }) => {
   return (
     <FlexContainer column>
@@ -13,10 +15,27 @@ const PageHead = ({ title, subtitle, subtitle2 }) => {
       >
         {title}
       </Typography>
-      <Typography variant='h5' sx={{ fontFamily: 'Ribeye', textAlign: 'center', maxWidth: 900 }}>
+      <Typography
+        variant='h5'
+        sx={{
+          fontFamily: 'Ribeye',
+          textAlign: 'center',
+          maxWidth: 900,
+          color: RICH_TAWNY,
+          fontWeight: 600,
+        }}
+      >
         {subtitle}
       </Typography>
-      <Typography variant='h5' sx={{ textAlign: 'center', maxWidth: 900 }}>
+      <Typography
+        variant='h5'
+        sx={{
+          textAlign: 'center',
+          maxWidth: 900,
+          color: RICH_TAWNY,
+          fontWeight: 600,
+        }}
+      >
         {subtitle2}
       </Typography>
     </FlexContainer>

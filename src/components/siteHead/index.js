@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import '../../styles.css';
-import { Box, Container, Typography, Zoom } from '@mui/material';
+import { Box, Container, Icon, Typography, Zoom } from '@mui/material';
 import { SiteHeadLogo, SiteHeadSlogan } from './SiteHeadLogo';
 import PGlink from '../PGlink';
 import PGtooltip from './PGtooltip.tsx';
 import { navigation } from './navigation';
-import { MenuPanOpen } from './MenuPanOpen';
-import { MenuPanClosed } from './MenuPanClosed';
+import { MdRestaurantMenu } from 'react-icons/md';
 import VarietiesDropdown from '../VarietiesDropdown';
+
+const TAWNY = '#dcc098';
 
 const SiteHead = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,9 +16,18 @@ const SiteHead = () => {
 
   return (
     <SiteHeadContainer>
-      <SiteHeadLogo />
-      <SiteHeadSlogan />
-      <MenuToggle handleToggle={handleToggle} isOpen={isOpen} />
+      <Container
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: { xs: 'space-between', md: 'flex-start' },
+          alignItems: 'center',
+        }}
+      >
+        <MenuToggle handleToggle={handleToggle} isOpen={isOpen} />
+        <SiteHeadLogo />
+        <SiteHeadSlogan />
+      </Container>
       <LinkContainer isOpen={isOpen} />
     </SiteHeadContainer>
   );
@@ -35,7 +45,42 @@ const MenuToggle = ({ handleToggle, isOpen }) => {
         marginBottom: '4px',
       }}
     >
-      {isOpen ? <MenuPanOpen /> : <MenuPanClosed />}
+      {isOpen ? <MenuIcon /> : <MenuIcon />}
+    </Box>
+  );
+};
+
+const MenuIcon = () => {
+  return (
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <Icon
+        sx={{
+          width: '60px',
+          height: 'auto',
+       
+          margin: 0,
+        }}
+      >
+        <MdRestaurantMenu color={TAWNY} size='40px' />
+      </Icon>
+      <Typography
+        className='slogan'
+        sx={{
+          fontFamily: 'Ribeye',
+          fontWeight: 400,
+          color: 'flash.tawny',
+          marginTop: '-10px'
+        }}
+      >
+        MENU
+      </Typography>
     </Box>
   );
 };
@@ -54,21 +99,11 @@ const LinkItem = ({ to, description, title }) => {
         TransitionComponent={Zoom}
         TransitionProps={{ timeout: 300 }}
       >
-        <Box
-          sx={{
-            margin: {
-              xs: 0,
-              sm: '0',
-            },
-            color: 'pg.nav',
-            '&:hover': {
-              color: 'primary.main',
-            },
-          }}
-        >
+        <Box>
           <Typography
             className='header'
             display='flex'
+            flexDirection={{ xs: 'column', md: 'row' }}
             justifyContent={{ xs: 'space-around' }}
             alignItems={{ xs: 'center', sm: 'baseline' }}
             sx={{
@@ -117,75 +152,67 @@ const LinkItem = ({ to, description, title }) => {
 
 const LinkContainer = ({ isOpen }) => {
   return (
-    <Container>
+    <Box
+      sx={{
+        display: {
+          xs: isOpen ? 'flex' : 'none',
+          md: 'flex',
+        },
+        justifyContent: {
+          xs: 'center',
+          md: 'space-around',
+        },
+        alignItems: 'center',
+        flexDirection: { xs: 'column', md: 'row' },
+      }}
+    >
       <Box
-        container
-        // spacing={2}
+        item
+        xs={12}
+        sm={2}
+        md={2}
+        key={'varieties'}
         sx={{
-          display: {
-            xs: isOpen ? 'flex' : 'none',
-            md: 'flex',
+          margin: { xs: '4px', sm: '4px', md: '8px' },
+          minWidth: { xs: '100%', sm: 'auto' },
+          '&:hover': {
+            background: {
+              xs: 'radial-gradient(rgba(36,36,36,.50) 40%, rgba(255,0,0,0) 70%)',
+              md: 'transparent',
+            },
+            color: 'background.head',
           },
-          justifyContent: {
-            xs: 'center',
-            md: 'space-around',
-          },
-          alignItems: 'center',
-          flexDirection: { xs: 'column', sm: 'row' },
         }}
       >
-        <Box
-          item
-          xs={12}
-          sm={2}
-          md={2}
-          key={'varieties'}
-          sx={{
-            margin: { xs: '4px', sm: '4px', md: '8px' },
-            minWidth: { xs: '100%', sm: 'auto' },
-            '&:hover': {
-              background: {
-                xs: 'radial-gradient(rgba(36,36,36,.50) 40%, rgba(255,0,0,0) 70%)',
-                md: 'transparent',
-              },
-              color: 'background.head',
-            },
-          }}
-        >
-          <VarietiesDropdown />
-        </Box>
-
-        {navigation.map((nav, index) => {
-          return (
-            <Box
-              item
-              xs={12}
-              sm={2}
-              md={2}
-              key={index}
-              sx={{
-                margin: { xs: '4px', sm: '4px', md: '8px' },
-                minWidth: { xs: '100%', sm: 'auto' },
-                '&:hover': {
-                  background: {
-                    xs: 'radial-gradient(rgba(36,36,36,.50) 40%, rgba(255,0,0,0) 70%)',
-                    md: 'transparent',
-                  },
-                  color: 'background.head',
-                },
-              }}
-            >
-              <LinkItem
-                to={nav.route}
-                key={index}
-                description={nav.description}
-                title={nav.title}
-              />
-            </Box>
-          );
-        })}
+        <VarietiesDropdown />
       </Box>
-    </Container>
+
+      {navigation.map((nav, index) => {
+        return (
+          <Box
+            key={index}
+            sx={{
+              margin: { xs: '4px', sm: '4px', md: '8px' },
+              minWidth: { xs: '100%', sm: 'auto' },
+              '&:hover': {
+                background: {
+                  xs: 'radial-gradient(rgba(36,36,36,.50) 40%, rgba(255,0,0,0) 70%)',
+                  md: 'transparent',
+                },
+                color: 'background.head',
+              },
+            }}
+          >
+            <LinkItem
+              to={nav.route}
+              key={index}
+              description={nav.description}
+              title={nav.title}
+            />
+          </Box>
+        );
+      })}
+    </Box>
   );
 };
 
@@ -210,10 +237,12 @@ const SiteHeadContainer = ({ children }) => {
           sx={{
             width: '100%',
             display: 'flex',
-            flexDirection: {
-              xs: 'row-reverse',
-              md: 'row',
-            },
+            flexDirection: 'row',
+            // {
+            //   xs: 'row-reverse',
+            //   md: 'row',
+            // }
+            // ,
             justifyContent: 'space-between',
             alignItems: 'center',
           }}

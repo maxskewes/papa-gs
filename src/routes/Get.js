@@ -5,7 +5,7 @@ import RouteContainer from '../components/RouteContainer';
 
 const Get = () => {
   return (
-    <RouteContainer>
+    <RouteContainer >
       <PageHead
         title={'Get.'}
         subtitle={'Our products are available from these fine grocers.'}
@@ -17,6 +17,7 @@ const Get = () => {
         display='flex'
         justifyContent='center'
         alignItems='center'
+
       >
         <Grid item sx={{ maxWidth: { xs: '200px', sm: '300px' } }}>
           <a
