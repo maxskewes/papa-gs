@@ -31,19 +31,19 @@ export default function VarietiesDropdown() {
         <Typography
           className='header'
           display='flex'
-          justifyContent={{ xs: 'space-around' }}
-          alignItems={{ xs: 'center', sm: 'baseline' }}
+          justifyContent='center'
+          alignItems='center'
+          minWidth={'100%'}
           sx={{
             color: 'flash.tawny',
             fontFamily: 'Ribeye Marrow',
             fontWeight: 400,
             textTransform: 'capitalize',
-            lineHeight: { xs: 1, lg: 1.5 },
+            lineHeight: 1,
             fontSize: {
               xs: '1.75rem',
               sm: '1.5rem',
               md: '2.5rem',
-              lg: '2.5rem',
             },
           }}
         >
