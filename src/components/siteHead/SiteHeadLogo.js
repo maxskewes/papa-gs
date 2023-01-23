@@ -21,7 +21,8 @@ export const SiteHeadSlogan = () => {
   return (
     <Box
       paddingBottom={{ xs: 0, md: '50px' }}
-      margin={{ xs: 0, lg: '16px' }}
+      marginRight={{ xs: 0, lg: '3rem' }}
+      marginLeft={{ xs: 0, md: '-1.5rem' }}
       sx={{ color: 'pg.nav' }}
     >
       <Typography

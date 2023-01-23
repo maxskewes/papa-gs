@@ -4,9 +4,9 @@ import { Box, Container, Icon, Typography, Zoom } from '@mui/material';
 import { SiteHeadLogo, SiteHeadSlogan } from './SiteHeadLogo';
 import PGlink from '../PGlink';
 import PGtooltip from './PGtooltip.tsx';
-import { navigation } from './navigation';
 import { MdRestaurantMenu } from 'react-icons/md';
 import VarietiesDropdown from '../VarietiesDropdown';
+import SiteHeadLg from './SiteHeadLg';
 
 const TAWNY = '#dcc098';
 
@@ -16,19 +16,7 @@ const SiteHead = () => {
 
   return (
     <SiteHeadContainer>
-      <Container
-        sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: { xs: 'space-between', md: 'flex-start' },
-          alignItems: 'center',
-        }}
-      >
-        <MenuToggle handleToggle={handleToggle} isOpen={isOpen} />
-        <SiteHeadLogo />
-        <SiteHeadSlogan />
-      </Container>
-      <LinkContainer isOpen={isOpen} />
+      <SiteHeadLg />
     </SiteHeadContainer>
   );
 };
@@ -64,7 +52,6 @@ const MenuIcon = () => {
         sx={{
           width: '60px',
           height: 'auto',
-       
           margin: 0,
         }}
       >
@@ -76,7 +63,7 @@ const MenuIcon = () => {
           fontFamily: 'Ribeye',
           fontWeight: 400,
           color: 'flash.tawny',
-          marginTop: '-10px'
+          marginTop: '-10px',
         }}
       >
         MENU
@@ -85,7 +72,7 @@ const MenuIcon = () => {
   );
 };
 
-const LinkItem = ({ to, description, title }) => {
+const SmLinkItem = ({ to, description, title }) => {
   return (
     <PGlink to={to}>
       <PGtooltip
@@ -117,6 +104,7 @@ const LinkItem = ({ to, description, title }) => {
                 md: '2.5rem',
                 lg: '2.5rem',
               },
+              '&:hover': { color: '#333', opacity: '80%' },
             }}
           >
             {title}
@@ -140,6 +128,7 @@ const LinkItem = ({ to, description, title }) => {
               padding: {
                 xs: '4px',
               },
+              '&:hover': { color: '#333', opacity: '80%' },
             }}
           >
             {description}
@@ -150,70 +139,45 @@ const LinkItem = ({ to, description, title }) => {
   );
 };
 
-const LinkContainer = ({ isOpen }) => {
-  return (
+const SmLinkContainer = ({ isOpen }) => {
+  return isOpen ? (
     <Box
       sx={{
-        display: {
-          xs: isOpen ? 'flex' : 'none',
-          md: 'flex',
-        },
-        justifyContent: {
-          xs: 'center',
-          md: 'space-around',
-        },
+        display: 'flex',
+        justifyContent: 'center',
         alignItems: 'center',
-        flexDirection: { xs: 'column', md: 'row' },
+        flexDirection: 'column',
+        backgroundColor: '#333',
+        minWidth: '100vw',
       }}
     >
+      <VarietiesDropdown />
       <Box
-        item
-        xs={12}
-        sm={2}
-        md={2}
-        key={'varieties'}
         sx={{
-          margin: { xs: '4px', sm: '4px', md: '8px' },
-          minWidth: { xs: '100%', sm: 'auto' },
-          '&:hover': {
-            background: {
-              xs: 'radial-gradient(rgba(36,36,36,.50) 40%, rgba(255,0,0,0) 70%)',
-              md: 'transparent',
-            },
-            color: 'background.head',
-          },
+          minWidth: '100vw',
+          backgroundColor: 'transparent',
+          '&:hover': { backgroundColor: '#dcc098', opacity: '80%' },
         }}
       >
-        <VarietiesDropdown />
+        <SmLinkItem
+          to={'/get'}
+          description={'Where to purchase'}
+          title={'Get.'}
+          sx={{
+            '&:hover': { color: '#333', opacity: '80%' },
+          }}
+        />
+        <SmLinkItem
+          to={'/us'}
+          description={"Papa G's Vegan Organics"}
+          title={'Us.'}
+          sx={{
+            '&:hover': { color: '#333', opacity: '80%' },
+          }}
+        />
       </Box>
-
-      {navigation.map((nav, index) => {
-        return (
-          <Box
-            key={index}
-            sx={{
-              margin: { xs: '4px', sm: '4px', md: '8px' },
-              minWidth: { xs: '100%', sm: 'auto' },
-              '&:hover': {
-                background: {
-                  xs: 'radial-gradient(rgba(36,36,36,.50) 40%, rgba(255,0,0,0) 70%)',
-                  md: 'transparent',
-                },
-                color: 'background.head',
-              },
-            }}
-          >
-            <LinkItem
-              to={nav.route}
-              key={index}
-              description={nav.description}
-              title={nav.title}
-            />
-          </Box>
-        );
-      })}
     </Box>
-  );
+  ) : null;
 };
 
 const SiteHeadContainer = ({ children }) => {
@@ -233,22 +197,7 @@ const SiteHeadContainer = ({ children }) => {
             'linear-gradient( to top, rgba(36,36,36,.2), rgba(255,0,0,0), rgba(36,36,36,.5))',
         }}
       >
-        <Container
-          sx={{
-            width: '100%',
-            display: 'flex',
-            flexDirection: 'row',
-            // {
-            //   xs: 'row-reverse',
-            //   md: 'row',
-            // }
-            // ,
-            justifyContent: 'space-between',
-            alignItems: 'center',
-          }}
-        >
-          {children}
-        </Container>
+        {children}
       </Box>
     </Box>
   );
