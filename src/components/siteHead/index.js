@@ -7,6 +7,7 @@ import PGtooltip from './PGtooltip.tsx';
 import { navigation } from './navigation';
 import { MdRestaurantMenu } from 'react-icons/md';
 import VarietiesDropdown from '../VarietiesDropdown';
+import SiteHeadLg from './SiteHeadLg';
 
 const TAWNY = '#dcc098';
 
@@ -16,9 +17,10 @@ const SiteHead = () => {
 
   return (
     <SiteHeadContainer>
-      <Container
+      <SiteHeadLg />
+      <Box
         sx={{
-          display: 'flex',
+          display: {xs: 'flex', md: 'none'},
           flexDirection: 'row',
           justifyContent: { xs: 'space-between', md: 'flex-start' },
           alignItems: 'center',
@@ -27,8 +29,8 @@ const SiteHead = () => {
         <MenuToggle handleToggle={handleToggle} isOpen={isOpen} />
         <SiteHeadLogo />
         <SiteHeadSlogan />
-      </Container>
-      <LinkContainer isOpen={isOpen} />
+        <LinkContainer isOpen={isOpen} />
+      </Box>
     </SiteHeadContainer>
   );
 };
@@ -64,7 +66,7 @@ const MenuIcon = () => {
         sx={{
           width: '60px',
           height: 'auto',
-       
+
           margin: 0,
         }}
       >
@@ -76,7 +78,7 @@ const MenuIcon = () => {
           fontFamily: 'Ribeye',
           fontWeight: 400,
           color: 'flash.tawny',
-          marginTop: '-10px'
+          marginTop: '-10px',
         }}
       >
         MENU
@@ -233,22 +235,7 @@ const SiteHeadContainer = ({ children }) => {
             'linear-gradient( to top, rgba(36,36,36,.2), rgba(255,0,0,0), rgba(36,36,36,.5))',
         }}
       >
-        <Container
-          sx={{
-            width: '100%',
-            display: 'flex',
-            flexDirection: 'row',
-            // {
-            //   xs: 'row-reverse',
-            //   md: 'row',
-            // }
-            // ,
-            justifyContent: 'space-between',
-            alignItems: 'center',
-          }}
-        >
-          {children}
-        </Container>
+        {children}
       </Box>
     </Box>
   );
