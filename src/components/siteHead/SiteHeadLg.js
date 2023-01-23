@@ -12,7 +12,7 @@ const SiteHeadLg = () => {
   return (
     <Container
       sx={{
-        display: 'flex',
+        display: {xs: 'none', md: 'flex'},
         flexDirection: 'row',
         justifyContent: 'flex-start',
         alignItems: 'center',
@@ -47,7 +47,7 @@ const LgLinkItem = ({ to, description, title }) => {
               fontFamily: 'Ribeye Marrow',
               fontWeight: 400,
               fontSize: '2.5rem',
-              '&:hover': { color: '#333', opacity: '80%' },
+              '&:hover': { color: '#c2914c' },
             }}
           >
             {title}

@@ -17,6 +17,19 @@ const SiteHead = () => {
   return (
     <SiteHeadContainer>
       <SiteHeadLg />
+      <Box
+        sx={{
+          display: {xs: 'flex', md: 'none'},
+          flexDirection: 'row',
+          justifyContent: { xs: 'space-between', md: 'flex-start' },
+          alignItems: 'center',
+        }}
+      >
+        <MenuToggle handleToggle={handleToggle} isOpen={isOpen} />
+        <SiteHeadLogo />
+        <SiteHeadSlogan />
+        <LinkContainer isOpen={isOpen} />
+      </Box>
     </SiteHeadContainer>
   );
 };

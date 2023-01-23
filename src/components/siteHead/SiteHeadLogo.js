@@ -19,22 +19,24 @@ export const SiteHeadLogo = () => {
 
 export const SiteHeadSlogan = () => {
   return (
-    <Box
-      paddingBottom={{ xs: 0, md: '50px' }}
-      marginRight={{ xs: 0, lg: '3rem' }}
-      marginLeft={{ xs: 0, md: '-1.5rem' }}
-      sx={{ color: 'pg.nav' }}
-    >
-      <Typography
-        variant='h5'
-        className='slogan'
-        textAlign={{ xs: 'right', md: 'left' }}
-        sx={{ fontFamily: 'Ribeye', fontWeight: 400, color: 'flash.tawny' }}
-      >
-        Seasoned. <br />
-        Baked.
-        <br /> Organic.
-      </Typography>
-    </Box>
+    <PGlink to='/'>
+      <Box paddingBottom={{ xs: 0, md: '50px' }} marginLeft={{ xs: 0, md: '-1.5rem' }}>
+        <Typography
+          variant='h5'
+          className='slogan'
+          textAlign={{ xs: 'right', md: 'left' }}
+          sx={{
+            fontFamily: 'Ribeye',
+            fontWeight: 400,
+            color: 'flash.tawny',
+            '&:hover': { color: '#c2914c' },
+          }}
+        >
+          Seasoned. <br />
+          Baked.
+          <br /> Organic.
+        </Typography>
+      </Box>
+    </PGlink>
   );
 };
