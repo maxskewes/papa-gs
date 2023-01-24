@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
 import '../../styles.css';
-import { Box, Icon, Typography, Zoom } from '@mui/material';
+import { Box, Icon, Typography } from '@mui/material';
 import { SiteHeadLogo, SiteHeadSlogan } from './SiteHeadLogo';
 import PGlink from '../PGlink';
-import PGtooltip from './PGtooltip.tsx';
 import { MdRestaurantMenu } from 'react-icons/md';
-import VarietiesDropdown from '../VarietiesDropdown';
-
-const TAWNY = '#dcc098';
 
 const SiteHeadSm = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,6 +53,10 @@ const MenuIcon = () => {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
+        color: 'flash.tawny',
+        '&:hover': {
+          color: '#e9d7be',
+        },
       }}
     >
       <Icon
@@ -66,14 +66,13 @@ const MenuIcon = () => {
           margin: 0,
         }}
       >
-        <MdRestaurantMenu color={TAWNY} size='40px' />
+        <MdRestaurantMenu size='40px' />
       </Icon>
       <Typography
         className='slogan'
         sx={{
           fontFamily: 'Ribeye',
           fontWeight: 400,
-          color: 'flash.tawny',
           marginTop: '-10px',
         }}
       >
@@ -83,7 +82,7 @@ const MenuIcon = () => {
   );
 };
 
-const SmLinkItem = ({ to, description, title }) => {
+const SmLinkItem = ({ to, title }) => {
   return (
     <PGlink to={to}>
       <Box
@@ -95,32 +94,23 @@ const SmLinkItem = ({ to, description, title }) => {
           justifyContent: 'center',
           alignItems: 'center',
           textAlign: 'center',
+          paddingTop: '.5rem',
+          paddingBottom: '.5rem',
           '&:hover': {
-            color: '#593c05',
-            background: 'radial-gradient(circle, #c2914c 60%, #212121 100%)',
+            color: '#e9d7be',
+            background: 'radial-gradient(circle, #9b3627 60%, #212121 100%)',
           },
         }}
       >
         <Typography
           className='header'
           sx={{
-            fontFamily: 'Ribeye Marrow',
-            fontSize: {
-              xs: '1.75rem',
-              sm: '1.5rem',
-            },
-          }}
-        >
-          {title}
-        </Typography>
-        <Typography
-          sx={{
             fontFamily: 'Ribeye',
             textTransform: 'uppercase',
             fontSize: '14px',
           }}
         >
-          {description}
+          {title}
         </Typography>
       </Box>
     </PGlink>
@@ -129,31 +119,22 @@ const SmLinkItem = ({ to, description, title }) => {
 
 const SmLinkContainer = ({ isOpen }) => {
   return isOpen ? (
-    <Box sx={{ backgroundColor: '#333' }}>
-      <Box
-        sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexDirection: 'column',
-
-          background: 'radial-gradient(circle, #c44431 60%, #212121 100%)',
-          minWidth: '100vw',
-          boxShadow: '0px 5px 25px #242424',
-        }}
-      >
-        <VarietiesDropdown />
-        <SmLinkItem
-          to={'/get'}
-          description={'Where to purchase'}
-          title={'Get.'}
-        />
-        <SmLinkItem
-          to={'/us'}
-          description={"Papa G's Vegan Organics"}
-          title={'Us.'}
-        />
-      </Box>
+    <Box
+      sx={{
+        display: { xs: 'flex', md: 'none' },
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+        background: 'transparent',
+        paddingBottom: '.5rem',
+      }}
+    >
+      <SmLinkItem to={'/original-recipe'} title={'Original Recipe Tofu'} />
+      <SmLinkItem to={'/savory-sesame'} title={'Savory Sesame'} />
+      <SmLinkItem to={'/taco-tofu'} title={'Street Taco'} />
+      <SmLinkItem to={'/bbq'} title={'Babeque'} />
+      <SmLinkItem to={'/get'} title={'Where to purchase'} />
+      <SmLinkItem to={'/us'} title={"Papa G's Vegan Organics"} />
     </Box>
   ) : null;
 };

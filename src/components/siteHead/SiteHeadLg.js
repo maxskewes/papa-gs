@@ -10,7 +10,7 @@ const SiteHeadLg = () => {
   return (
     <Container
       sx={{
-        display: {xs: 'none', md: 'flex'},
+        display: { xs: 'none', md: 'flex' },
         flexDirection: 'row',
         justifyContent: 'flex-start',
         alignItems: 'center',

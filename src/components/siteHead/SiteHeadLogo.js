@@ -20,7 +20,10 @@ export const SiteHeadLogo = () => {
 export const SiteHeadSlogan = () => {
   return (
     <PGlink to='/'>
-      <Box paddingBottom={{ xs: 0, md: '50px' }} marginLeft={{ xs: 0, md: '-1.5rem' }}>
+      <Box
+        paddingBottom={{ xs: 0, md: '50px' }}
+        marginLeft={{ xs: 0, md: '-1.5rem' }}
+      >
         <Typography
           variant='h5'
           className='slogan'
@@ -29,7 +32,6 @@ export const SiteHeadSlogan = () => {
             fontFamily: 'Ribeye',
             fontWeight: 400,
             color: 'flash.tawny',
-            '&:hover': { color: '#c2914c' },
           }}
         >
           Seasoned. <br />

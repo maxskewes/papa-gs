@@ -4,12 +4,9 @@ import { Box } from '@mui/material';
 import SiteHeadLg from './SiteHeadLg';
 import SiteHeadSm from './SiteHeadSm';
 
-const TAWNY = '#dcc098';
-
 const SiteHead = () => {
-
   return (
-    <SiteHeadContainer>
+    <SiteHeadContainer maxWidth={'1400px'}>
       <SiteHeadLg />
       <SiteHeadSm />
     </SiteHeadContainer>
@@ -23,12 +20,12 @@ const SiteHeadContainer = ({ children }) => {
         background: 'radial-gradient(circle, #c44431 60%, #212121 100%)',
         boxShadow: '0px 5px 25px #242424',
         position: 'relative',
-        maxHeight: '200px',
+        maxHeight: { xs: null, md: '200px' },
       }}
     >
       <Box
         sx={{
-          maxHeight: '200px',
+          maxHeight: { xs: null, md: '200px' },
           background:
             'linear-gradient( to top, rgba(36,36,36,.2), rgba(255,0,0,0), rgba(36,36,36,.5))',
         }}

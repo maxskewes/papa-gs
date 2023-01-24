@@ -12,7 +12,6 @@ const RouteContainer = ({ children }) => {
         color: 'primary.text',
       }}
     >
-
         <Box
           sx={{
             minHeight: {
@@ -34,7 +33,6 @@ const RouteContainer = ({ children }) => {
         >
           {children}
         </Box>
-
     </Box>
   );
 };

@@ -17,10 +17,8 @@ import BBQ from './routes/BBQ';
 
 function App() {
   return (
-    <BrowserRouter>
-      <SiteHead
-        sx={{ boxShadow: '1px 2px 9px #F4AAB9', margin: '4em', padding: '1em' }}
-      />
+    <BrowserRouter maxWidth={'1400px'}>
+      <SiteHead />
       <Routes>
         <Route path='/' element={<Landing />} />
         <Route path='original-recipe' element={<Original />} />
