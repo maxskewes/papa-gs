@@ -20,6 +20,7 @@ const SiteHeadSm = () => {
           flexDirection: 'row',
           justifyContent: 'space-between',
           alignItems: 'center',
+          padding: '0 1rem',
         }}
       >
         <MenuToggle handleToggle={handleToggle} isOpen={isOpen} />
@@ -85,105 +86,72 @@ const MenuIcon = () => {
 const SmLinkItem = ({ to, description, title }) => {
   return (
     <PGlink to={to}>
-      <PGtooltip
+      <Box
         sx={{
-          display: {
-            xs: 'none',
-            md: 'block',
+          display: 'flex',
+          flexDirection: 'column',
+          minWidth: '100vw',
+          color: 'flash.tawny',
+          justifyContent: 'center',
+          alignItems: 'center',
+          textAlign: 'center',
+          '&:hover': {
+            color: '#593c05',
+            background: 'radial-gradient(circle, #c2914c 60%, #212121 100%)',
           },
         }}
-        title={description}
-        TransitionComponent={Zoom}
-        TransitionProps={{ timeout: 300 }}
       >
-        <Box>
-          <Typography
-            className='header'
-            display='flex'
-            flexDirection={{ xs: 'column', md: 'row' }}
-            justifyContent={{ xs: 'space-around' }}
-            alignItems={{ xs: 'center', sm: 'baseline' }}
-            sx={{
-              color: 'flash.tawny',
-              fontFamily: 'Ribeye Marrow',
-              fontWeight: 400,
-              lineHeight: { xs: 1, lg: 1.5 },
-              fontSize: {
-                xs: '1.75rem',
-                sm: '1.5rem',
-                md: '2.5rem',
-                lg: '2.5rem',
-              },
-              '&:hover': { color: '#333', opacity: '80%' },
-            }}
-          >
-            {title}
-          </Typography>
-          <Typography
-            className='description'
-            display={{
-              xs: 'flex',
-              md: 'none',
-            }}
-            sx={{
-              color: 'flash.tawny',
-              fontFamily: 'Ribeye',
-              textTransform: 'uppercase',
-              fontSize: '14px',
-              fontWeight: 400,
-              justifyContent: 'center',
-              alignItems: 'center',
-              textAlign: 'center',
-              lineHeight: { xs: 1 },
-              padding: {
-                xs: '4px',
-              },
-              '&:hover': { color: '#333', opacity: '80%' },
-            }}
-          >
-            {description}
-          </Typography>
-        </Box>
-      </PGtooltip>
+        <Typography
+          className='header'
+          sx={{
+            fontFamily: 'Ribeye Marrow',
+            fontSize: {
+              xs: '1.75rem',
+              sm: '1.5rem',
+            },
+          }}
+        >
+          {title}
+        </Typography>
+        <Typography
+          sx={{
+            fontFamily: 'Ribeye',
+            textTransform: 'uppercase',
+            fontSize: '14px',
+          }}
+        >
+          {description}
+        </Typography>
+      </Box>
     </PGlink>
   );
 };
 
 const SmLinkContainer = ({ isOpen }) => {
   return isOpen ? (
-    <Box
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection: 'column',
-        backgroundColor: '#333',
-        minWidth: '100vw',
-      }}
-    >
-      <VarietiesDropdown />
+    <Box sx={{ backgroundColor: '#333' }}>
       <Box
         sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexDirection: 'column',
+
+          background: 'radial-gradient(circle, #c44431 60%, #212121 100%)',
           minWidth: '100vw',
-          backgroundColor: 'transparent',
-          '&:hover': { backgroundColor: '#dcc098', opacity: '80%' },
+          boxShadow: '0px 5px 25px #242424',
         }}
       >
+        <VarietiesDropdown />
         <SmLinkItem
           to={'/get'}
           description={'Where to purchase'}
           title={'Get.'}
-          sx={{
-            '&:hover': { color: '#333', opacity: '80%' },
-          }}
         />
         <SmLinkItem
           to={'/us'}
           description={"Papa G's Vegan Organics"}
           title={'Us.'}
-          sx={{
-            '&:hover': { color: '#333', opacity: '80%' },
-          }}
         />
       </Box>
     </Box>
