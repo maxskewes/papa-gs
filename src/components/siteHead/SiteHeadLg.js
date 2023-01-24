@@ -6,8 +6,6 @@ import PGlink from '../PGlink';
 import PGtooltip from './PGtooltip.tsx';
 import VarietiesDropdown from '../VarietiesDropdown';
 
-const TAWNY = '#dcc098';
-
 const SiteHeadLg = () => {
   return (
     <Container

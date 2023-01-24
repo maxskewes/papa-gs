@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../../styles.css';
-import { Box, Container, Icon, Typography, Zoom } from '@mui/material';
+import { Box, Icon, Typography, Zoom } from '@mui/material';
 import { SiteHeadLogo, SiteHeadSlogan } from './SiteHeadLogo';
 import PGlink from '../PGlink';
 import PGtooltip from './PGtooltip.tsx';
@@ -28,7 +28,7 @@ const SiteHead = () => {
         <MenuToggle handleToggle={handleToggle} isOpen={isOpen} />
         <SiteHeadLogo />
         <SiteHeadSlogan />
-        <LinkContainer isOpen={isOpen} />
+        <SmLinkContainer isOpen={isOpen} />
       </Box>
     </SiteHeadContainer>
   );
