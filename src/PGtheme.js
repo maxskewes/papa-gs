@@ -1,7 +1,7 @@
 import { createTheme, responsiveFontSizes } from '@mui/material';
 import { brown } from '@mui/material/colors';
 
-const BLACK = '#212121';
+const BLACK = '#333';
 const WHITE = '#FFFDFA';
 const NAV = brown[900];
 const YELLOW = '#deb20b';
@@ -12,6 +12,7 @@ const ORANGE = '#e26107';
 const SOFT_BLACK = '#242424';
 const TAWNY = '#dcc098';
 const RICH_TAWNY = '#96670e';
+const DARK_TAWNY = '#3d2a05';
 
 let PGtheme = createTheme({
   palette: {
@@ -33,6 +34,7 @@ let PGtheme = createTheme({
       orange: ORANGE,
       tawny: TAWNY,
       richTawny: RICH_TAWNY,
+      dark_tawny: DARK_TAWNY,
     },
     background: {
       main: '#f7e8b7',
@@ -80,8 +82,8 @@ let PGtheme = createTheme({
       fontWeight: 400,
     },
     footer: {
-      fontFamily: 'Ribeye Marrow',
-      fontWeight: 700,
+      fontFamily: 'Ribeye',
+      fontWeight: 500,
       fontSize: '24px',
       color: TAWNY,
     },
