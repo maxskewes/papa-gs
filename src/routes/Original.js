@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles.css';
 import VarietyPage from '../components/VarietyPage';
 
 const Original = () => {

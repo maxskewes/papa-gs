@@ -55,7 +55,7 @@ const LgLinkItem = ({ to, description, title }) => {
               fontFamily: 'Ribeye Marrow',
               fontWeight: 400,
               fontSize: '2.5rem',
-              '&:hover': { color: '#c2914c' },
+              '&:hover': { color: 'flash.rich_tawny' },
             }}
           >
             {title}
@@ -79,7 +79,6 @@ const LgLinkItem = ({ to, description, title }) => {
               padding: {
                 xs: '4px',
               },
-              '&:hover': { color: '#333', opacity: '80%' },
             }}
           >
             {description}

@@ -36,18 +36,29 @@ const SiteFoot = () => {
           <a href='https://www.facebook.com/PapaGsVeganOrganicDeli'>
             <Typography
               variant='h3'
-              sx={{ color: 'flash.tawny', padding: '16px', cursor: 'pointer' }}
+              sx={{
+                color: 'flash.tawny',
+                padding: '16px',
+                cursor: 'pointer',
+                '&:hover': { color: 'flash.rich_tawny' },
+              }}
             >
-              <RiFacebookCircleFill sx={{ cursor: 'pointer' }} />
+              <RiFacebookCircleFill />
             </Typography>
           </a>
 
           <a href='https://www.instagram.com/explore/locations/986157498/papa-gs-pizza-and-pasta/?hl=en'>
             <Typography
               variant='h3'
-              sx={{ color: 'flash.tawny', padding: '16px', cursor: 'pointer' }}
+              sx={{
+                color: 'flash.tawny',
+                padding: '16px',
+                cursor: 'pointer',
+
+                '&:hover': { color: 'flash.rich_tawny' },
+              }}
             >
-              <RiInstagramFill m={4} className='footer' />
+              <RiInstagramFill m={4} />
             </Typography>
           </a>
 
@@ -55,7 +66,12 @@ const SiteFoot = () => {
             <Typography
               variant='h3'
               className='footer'
-              sx={{ color: 'flash.tawny', padding: '16px', cursor: 'pointer' }}
+              sx={{
+                color: 'flash.tawny',
+                padding: '16px',
+                cursor: 'pointer',
+                '&:hover': { color: 'flash.rich_tawny' },
+              }}
             >
               <RiMailFill m={4} />
             </Typography>
