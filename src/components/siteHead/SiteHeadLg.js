@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles.css';
-import { Box, Container, Typography, Zoom } from '@mui/material';
+import { Box, Typography, Zoom } from '@mui/material';
 import { SiteHeadLogo, SiteHeadSlogan } from './SiteHeadLogo';
 import PGlink from '../PGlink';
 import PGtooltip from './PGtooltip.tsx';
@@ -22,7 +22,7 @@ const SiteHeadLg = () => {
           flexDirection: 'row',
           justifyContent: 'space-between',
           alignItems: 'center',
-          flexGrow: 1,
+          flexGrow: 2,
         }}
       >
         <SiteHeadLogo />
@@ -102,6 +102,7 @@ const LgLinkContainer = () => {
         justifyContent: 'space-around',
         alignItems: 'center',
         flexDirection: 'row',
+        maxWidth: '800px',
       }}
     >
       <VarietiesDropdown />

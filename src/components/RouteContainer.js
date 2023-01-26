@@ -24,10 +24,10 @@ const RouteContainer = ({ children }) => {
             justifyContent: 'center',
             alignItems: 'center',
             padding: {
-              xs: '1rem .5rem 2.5rem',
-              sm: '1rem 1rem 2.5rem',
-              md: '2rem 1rem 5rem',
-              lg: '2.5rem 1rem 5rem',
+              xs: '2rem .5rem 3.5rem',
+              sm: '2rem 1rem 3.5rem',
+              md: '3rem 1rem 5rem',
+              lg: '3.5rem 1rem 5rem',
             },
           }}
         >

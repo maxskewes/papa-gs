@@ -6,7 +6,7 @@ import SiteHeadSm from './SiteHeadSm';
 
 const SiteHead = () => {
   return (
-    <SiteHeadBackground maxWidth={'1800px'}>
+    <SiteHeadBackground>
       <SiteHeadLg />
       <SiteHeadSm />
     </SiteHeadBackground>

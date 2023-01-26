@@ -1,62 +1,16 @@
 import React from 'react';
 import '../styles.css';
-import { Grid, Box, Typography } from '@mui/material';
-import RouteContainer from '../components/RouteContainer';
+import VarietyPage from '../components/VarietyPage';
 
 const Original = () => {
   return (
-    <RouteContainer>
-      <Typography variant='h1' className='shadow' sx={{ textAlign: 'center' }}>
-        the Original Recipe Tofu
-      </Typography>
-      <Grid container sx={{ alignItems: 'center' }}>
-        <Grid item xs={12} md={6}>
-          <Box
-            sx={{
-              margin: {
-                xs: '0 0 0 20px',
-                md: 0,
-              },
-            }}
-          >
-            <img
-              width='100%'
-              src='/images/pack-over-board/original_pack_on_board_120psi.png'
-              alt='Original Recipe Tofu'
-            />
-          </Box>
-        </Grid>
-        <Grid
-          item
-          xs={12}
-          md={6}
-          sx={{
-            textAlign: {
-              xs: 'center',
-              md: 'left',
-            },
-            margin: {
-              xs: '0 40px',
-              md: 0,
-            },
-          }}
-        >
-          <Typography variant='h3' className='shade_original' sx={{ fontFamily: 'Ribeye', margin: 1 }}>
-            Original Recipe Tofu
-          </Typography>
-          <Typography variant='h4' sx={{ fontFamily: 'Ribeye', margin: '16px 0 4px 64px' }}>
-            Some stuff about it:
-          </Typography>
-          <Typography
-            variant='h3'
-            className='shade_original'
-            sx={{ fontFamily: 'Ribeye Marrow', fontWeight: 400, margin: '4px 32px 32px' }}
-          >
-            It slices, it dices, it wins the election...
-          </Typography>
-        </Grid>
-      </Grid>
-    </RouteContainer>
+    <VarietyPage
+      varietyName='the Organic Original Recipe Tofu'
+      shadowClassName='shadow'
+      imageSrc='/images/pack-over-board/original_pack_on_board_120psi.png'
+      imageAlt='Original Recipe Tofu'
+      description="Sure, we all have our own favorite way to enjoy tofu. But the thing is, it doesn't matter how you devour our organic tofu—you'll still be getting an amazing plant-based experience. We start with organic tofu that’s been hand selected and marinated in our secret blend of lemon pepper, thyme and spices. Then we bake it to perfection for an incredibly tender, chewy bite, bursting with flavor. We use only the highest quality, organic ingredients to provide you with superior taste, and nutrition in every bite! Naturally low in fat and cholesterol-free, each bag is packed with over 30 grams of protein, calcium, and iron to give you the fuel you need to live your best life! Whether you add it to salads, throw it on top of ramen, combine it with mashed potatoes and gravy, or cook your own tofu scramble this weekend...we can guarantee that you'll make each bite disappear fast (because they're just so delicious). Your best nutritional bet? Eat guilt-free anytime with any dish... or as a snack straight from the bag!"
+    />
   );
 };
 

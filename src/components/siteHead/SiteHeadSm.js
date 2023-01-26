@@ -64,6 +64,7 @@ const MenuIcon = () => {
       }}
     >
       <Icon
+      //add shadow to icon
         sx={{
           width: '60px',
           height: 'auto',
