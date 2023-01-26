@@ -16,10 +16,14 @@ const SiteHeadSm = () => {
           flexDirection: 'row',
           justifyContent: 'space-between',
           alignItems: 'center',
-          padding: '0 1rem',
+          padding: { xs: '0 1rem', sm: '0 2rem' },
         }}
       >
-        <MenuToggle handleToggle={handleToggle} isOpen={isOpen} />
+        <MenuToggle
+          handleToggle={handleToggle}
+          isOpen={isOpen}
+          sx={{ flexGrow: 1 }}
+        />
         <SiteHeadLogo />
         <SiteHeadSlogan />
       </Box>
@@ -52,7 +56,7 @@ const MenuIcon = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         color: 'flash.tawny',
         '&:hover': {
           color: '#e9d7be',
@@ -66,12 +70,13 @@ const MenuIcon = () => {
           margin: 0,
         }}
       >
-        <MdRestaurantMenu size='40px' />
+        <MdRestaurantMenu size= '40px' />
       </Icon>
       <Typography
         className='slogan'
         sx={{
           fontFamily: 'Ribeye',
+          fontSize: { xs: '1rem', sm: '1.25rem' },
           fontWeight: 400,
           marginTop: '-10px',
         }}

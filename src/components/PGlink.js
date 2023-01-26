@@ -4,7 +4,7 @@ import '../App.css';
 
 const PGlink = ({ to, children }) => {
   return (
-    <NavLink underline='none' to={to} cursor='pointer'>
+    <NavLink underline='none' to={to} cursor='pointer' display='flex'>
       {children}
     </NavLink>
   );

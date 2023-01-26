@@ -8,18 +8,28 @@ import VarietiesDropdown from '../VarietiesDropdown';
 
 const SiteHeadLg = () => {
   return (
-    <Container
+    <Box
       sx={{
+        width: '100%',
         display: { xs: 'none', md: 'flex' },
-        flexDirection: 'row',
-        justifyContent: 'flex-start',
-        alignItems: 'center',
+        justifyContent: 'center',
       }}
     >
-      <SiteHeadLogo />
-      <SiteHeadSlogan />
-      <LgLinkContainer />
-    </Container>
+      <Box
+        sx={{
+          maxWidth: '1400px',
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          flexGrow: 1,
+        }}
+      >
+        <SiteHeadLogo />
+        <SiteHeadSlogan />
+        <LgLinkContainer />
+      </Box>
+    </Box>
   );
 };
 
