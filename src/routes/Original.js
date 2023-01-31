@@ -4,7 +4,7 @@ import VarietyPage from '../components/VarietyPage';
 const Original = () => {
   return (
     <VarietyPage
-      varietyName='the Organic Original Recipe Tofu'
+      varietyName='the Original Recipe'
       shadowClassName='shadow'
       imageSrc='/images/pack-over-board/original_pack_on_board_120psi.png'
       imageAlt='Original Recipe Tofu'

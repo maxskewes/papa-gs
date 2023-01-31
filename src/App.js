@@ -27,8 +27,8 @@ function App() {
           <Route path='/' element={<Landing />} />
           <Route path='original-recipe' element={<Original />} />
           <Route path='savory-sesame' element={<Sesame />} />
-          <Route path='taco-tofu' element={<Taco />} />
-          <Route path='bbq' element={<BBQ />} />
+          <Route path='street-taco' element={<Taco />} />
+          <Route path='barbeque' element={<BBQ />} />
           <Route path='get' element={<Get />} />
           <Route path='cook' element={<Cook />} />
           <Route path='eat' element={<Eat />} />

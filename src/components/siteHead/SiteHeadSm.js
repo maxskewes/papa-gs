@@ -135,10 +135,10 @@ const SmLinkContainer = ({ isOpen }) => {
         paddingBottom: '.5rem',
       }}
     >
-      <SmLinkItem to={'/original-recipe'} title={'Original Recipe Tofu'} />
+      <SmLinkItem to={'/original-recipe'} title={'Original Recipe'} />
       <SmLinkItem to={'/savory-sesame'} title={'Savory Sesame'} />
-      <SmLinkItem to={'/taco-tofu'} title={'Street Taco'} />
-      <SmLinkItem to={'/bbq'} title={'Babeque'} />
+      <SmLinkItem to={'/street-taco'} title={'Street Taco'} />
+      <SmLinkItem to={'/barbeque'} title={'Babeque'} />
       <SmLinkItem to={'/get'} title={'Where to purchase'} />
       <SmLinkItem to={'/us'} title={"Papa G's Vegan Organics"} />
     </Box>

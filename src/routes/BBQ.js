@@ -4,7 +4,7 @@ import VarietyPage from '../components/VarietyPage';
 const BBQ = () => {
   return (
     <VarietyPage
-      varietyName='Organic Barbeque Tofu'
+      varietyName='Barbeque'
       shadowClassName='shadow_bbq'
       imageSrc='/images/pack-over-board/bbq_pack_on_board_120psi.png'
       imageAlt='Organic BBQ Tofu'

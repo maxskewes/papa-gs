@@ -4,7 +4,7 @@ import VarietyPage from '../components/VarietyPage';
 const Sesame = () => {
   return (
     <VarietyPage
-      varietyName='Organic Savory Sesame Tofu'
+      varietyName='Savory Sesame'
       shadowClassName='shadow_sesame'
       imageSrc='/images/pack-over-board/sesame_pack_on_board_120psi.png'
       imageAlt='Savory Sesame Tofu'

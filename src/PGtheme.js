@@ -18,6 +18,7 @@ const DARK_TAWNY = '#3d2a05';
 let PGtheme = createTheme({
   palette: {
     mode: 'light',
+    BITCH_TAWNY: '#e26107',
     pg: { softBlack: SOFT_BLACK, black: BLACK, white: WHITE, nav: NAV },
     primary: {
       main: GREEN,

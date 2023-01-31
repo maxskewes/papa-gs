@@ -65,14 +65,14 @@ const Landing = () => {
         <ProductCard
           key='1'
           productName={'Taco Tofu'}
-          productPage={'/taco-tofu'}
+          productPage={'/street-taco'}
           productImage={'/images/trimmed/taco_pack_120psi.png'}
           cardColor={RED}
         />
         <ProductCard
           key='1'
           productName={'BBQ'}
-          productPage={'/bbq'}
+          productPage={'/barbeque'}
           productImage={'/images/trimmed/bbq_pack_120psi.png'}
           cardColor={BLUE}
         />

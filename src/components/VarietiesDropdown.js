@@ -14,9 +14,9 @@ export default function VarietiesDropdown() {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  // const handleClick = () => {
-
-  // }
+  const handleClick = (e) => {
+    setAnchorEl(e.currentTarget);
+  };
 
   return (
     <>
@@ -25,8 +25,8 @@ export default function VarietiesDropdown() {
         aria-controls={open ? 'varieties-list' : undefined}
         aria-haspopup='true'
         aria-expanded={open ? 'true' : undefined}
-        //  onClick={handleClick}
-        onMouseEnter={handleOpen}
+        onClick={handleClick}
+        // onMouseEnter={handleOpen}
       >
         <Typography
           className='header'
@@ -69,11 +69,11 @@ export default function VarietiesDropdown() {
             backgroundColor: 'green',
           }}
         >
-          <MenuItem onClick={handleClose}>
-            <PGlink to='/original-recipe'>
+          <PGlink to='/original-recipe'>
+            <MenuItem onClick={handleClose}>
               <Typography
                 sx={{
-                  color: RICH_TAWNY,
+                  color: 'BITCH_TAWNY',
                   fontSize: 12,
                   fontFamily: 'Ribeye',
                   fontWeight: 600,
@@ -82,10 +82,10 @@ export default function VarietiesDropdown() {
               >
                 Original Recipe
               </Typography>
-            </PGlink>
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <PGlink to='/savory-sesame'>
+            </MenuItem>
+          </PGlink>
+          <PGlink to='/savory-sesame'>
+            <MenuItem onClick={handleClose}>
               <Typography
                 sx={{
                   color: RICH_TAWNY,
@@ -97,10 +97,10 @@ export default function VarietiesDropdown() {
               >
                 Savory Sesame
               </Typography>
-            </PGlink>
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <PGlink to='/taco-tofu'>
+            </MenuItem>
+          </PGlink>
+          <PGlink to='/street-taco'>
+            <MenuItem onClick={handleClose}>
               <Typography
                 sx={{
                   color: RICH_TAWNY,
@@ -110,13 +110,12 @@ export default function VarietiesDropdown() {
                   textTransform: 'uppercase',
                 }}
               >
-                Taco Tofu
+                Street Taco
               </Typography>
-            </PGlink>
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <PGlink to='/bbq'>
-              {' '}
+            </MenuItem>
+          </PGlink>
+          <PGlink to='/barbeque'>
+            <MenuItem onClick={handleClose}>
               <Typography
                 sx={{
                   color: RICH_TAWNY,
@@ -128,8 +127,8 @@ export default function VarietiesDropdown() {
               >
                 Barbeque
               </Typography>
-            </PGlink>
-          </MenuItem>
+            </MenuItem>
+          </PGlink>
         </Box>
       </Menu>
     </>

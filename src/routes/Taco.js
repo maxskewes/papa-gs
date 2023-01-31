@@ -4,7 +4,7 @@ import VarietyPage from '../components/VarietyPage';
 const Taco = () => {
   return (
     <VarietyPage
-      varietyName='Organic Street Taco Tofu'
+      varietyName='Street Taco'
       shadowClassName='shadow'
       imageSrc='/images/pack-over-board/taco_pack_on_board_120psi.png'
       imageAlt='Street Taco Tofu'
