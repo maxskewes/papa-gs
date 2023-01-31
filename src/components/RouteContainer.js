@@ -10,29 +10,27 @@ const RouteContainer = ({ children }) => {
         justifyContent: 'center',
         alignItems: 'center',
         color: 'primary.text',
+        flexGrow: 2,
+        minWidth: '100vw',
       }}
     >
-        <Box
-          sx={{
-            minHeight: {
-              xs: 0,
-              md: '400px',
-            },
-            maxWidth: '1200px',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-            padding: {
-              xs: '2rem .5rem 3.5rem',
-              sm: '2rem 1rem 3.5rem',
-              md: '3rem 1rem 5rem',
-              lg: '3.5rem 1rem 5rem',
-            },
-          }}
-        >
-          {children}
-        </Box>
+      <Box
+        sx={{
+          maxWidth: '1200px',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          padding: {
+            xs: '2rem .5rem 3.5rem',
+            sm: '2rem 1rem 3.5rem',
+            md: '3rem 1rem 5rem',
+            lg: '3.5rem 1rem 5rem',
+          },
+        }}
+      >
+        {children}
+      </Box>
     </Box>
   );
 };

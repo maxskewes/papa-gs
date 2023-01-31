@@ -3,8 +3,6 @@ import '../styles.css';
 import { Typography } from '@mui/material';
 import FlexContainer from './FlexContainer';
 
-const RICH_TAWNY = '#593c05';
-
 const SectionHead = ({ title, subtitle }) => {
   return (
     <FlexContainer column sx={{ paddingTop: 4 }}>
@@ -14,7 +12,6 @@ const SectionHead = ({ title, subtitle }) => {
         sx={{
           textAlign: 'center',
           maxWidth: 900,
-
         }}
       >
         {title}
@@ -25,7 +22,7 @@ const SectionHead = ({ title, subtitle }) => {
           fontFamily: 'Ribeye',
           textAlign: 'center',
           maxWidth: 900,
-          color: RICH_TAWNY,
+          color: 'flash.dark_tawny',
           fontWeight: 600,
         }}
       >

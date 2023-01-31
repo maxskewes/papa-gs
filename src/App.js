@@ -14,25 +14,30 @@ import Original from './routes/Original';
 import Sesame from './routes/Sesame';
 import Taco from './routes/Taco';
 import BBQ from './routes/BBQ';
+import { Box } from '@mui/material';
 
 function App() {
   return (
     <BrowserRouter maxWidth={'1400px'}>
-      <SiteHead />
-      <Routes>
-        <Route path='/' element={<Landing />} />
-        <Route path='original-recipe' element={<Original />} />
-        <Route path='savory-sesame' element={<Sesame />} />
-        <Route path='taco-tofu' element={<Taco />} />
-        <Route path='bbq' element={<BBQ />} />
-        <Route path='get' element={<Get />} />
-        <Route path='cook' element={<Cook />} />
-        <Route path='eat' element={<Eat />} />
-        <Route path='live' element={<Live />} />
-        <Route path='us' element={<Us />} />
-        <Route path='contact' element={<Contact />} />
-      </Routes>
-      <SiteFoot />
+      <Box
+        sx={{ minHeight: '100vh', minWidth: '100vw', display: 'flex', flexDirection: 'column' }}
+      >
+        <SiteHead />
+        <Routes>
+          <Route path='/' element={<Landing />} />
+          <Route path='original-recipe' element={<Original />} />
+          <Route path='savory-sesame' element={<Sesame />} />
+          <Route path='taco-tofu' element={<Taco />} />
+          <Route path='bbq' element={<BBQ />} />
+          <Route path='get' element={<Get />} />
+          <Route path='cook' element={<Cook />} />
+          <Route path='eat' element={<Eat />} />
+          <Route path='live' element={<Live />} />
+          <Route path='us' element={<Us />} />
+          <Route path='contact' element={<Contact />} />
+        </Routes>
+        <SiteFoot />
+      </Box>
     </BrowserRouter>
   );
 }

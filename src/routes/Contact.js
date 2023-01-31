@@ -4,16 +4,14 @@ import FlexContainer from '../components/FlexContainer';
 import RouteContainer from '../components/RouteContainer';
 import PageHead from '../components/PageHead';
 
-const RICH_TAWNY = '#593c05';
-
 const Contact = () => {
   return (
-    <RouteContainer>
+    <RouteContainer sx={{ display: 'flex', flexGrow: 2}}>
       <PageHead title={'Contact.'} />
-      <FlexContainer column>
+      <FlexContainer column sx={{ display: 'flex', flexGrow: 2}}>
         <Typography
           sx={{
-            color: RICH_TAWNY,
+            color: 'flash.med_tawny',
             fontSize: '24px',
             fontFamily: 'Ribeye',
             fontWeight: 600,
@@ -23,7 +21,7 @@ const Contact = () => {
         </Typography>
         <Typography
           sx={{
-            color: RICH_TAWNY,
+            color: 'flash.med_tawny',
             fontSize: '24px',
             fontFamily: 'Ribeye',
             fontWeight: 600,

@@ -22,6 +22,7 @@ const SiteHeadLg = () => {
           flexDirection: 'row',
           justifyContent: 'space-between',
           alignItems: 'center',
+          paddingX: { md: '1rem', lg: '2rem' },
           flexGrow: 2,
         }}
       >

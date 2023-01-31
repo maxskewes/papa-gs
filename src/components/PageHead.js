@@ -3,15 +3,16 @@ import '../styles.css';
 import { Typography } from '@mui/material';
 import FlexContainer from './FlexContainer';
 
-const RICH_TAWNY = '#593c05';
-
 const PageHead = ({ title, subtitle, subtitle2 }) => {
   return (
     <FlexContainer column>
       <Typography
         className='shadow_bbq'
         variant='h2'
-        sx={{ textAlign: 'center', lineHeight: { xs: 1, lg: 1.5 } }}
+        sx={{
+          textAlign: 'center',
+          lineHeight: { xs: 1, lg: 1.5 },
+        }}
       >
         {title}
       </Typography>
@@ -21,7 +22,7 @@ const PageHead = ({ title, subtitle, subtitle2 }) => {
           fontFamily: 'Ribeye',
           textAlign: 'center',
           maxWidth: 900,
-          color: RICH_TAWNY,
+          color: 'flash.med_tawny',
           fontWeight: 600,
         }}
       >
@@ -32,7 +33,7 @@ const PageHead = ({ title, subtitle, subtitle2 }) => {
         sx={{
           textAlign: 'center',
           maxWidth: 900,
-          color: RICH_TAWNY,
+          color: 'flash.med_tawny',
           fontWeight: 600,
         }}
       >

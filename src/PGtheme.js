@@ -12,6 +12,7 @@ const ORANGE = '#e26107';
 const SOFT_BLACK = '#242424';
 const TAWNY = '#dcc098';
 const RICH_TAWNY = '#c2914c';
+const MED_TAWNY = '#593c05';
 const DARK_TAWNY = '#3d2a05';
 
 let PGtheme = createTheme({
@@ -34,6 +35,7 @@ let PGtheme = createTheme({
       orange: ORANGE,
       tawny: TAWNY,
       rich_tawny: RICH_TAWNY,
+      med_tawny: MED_TAWNY,
       dark_tawny: DARK_TAWNY,
     },
     background: {
