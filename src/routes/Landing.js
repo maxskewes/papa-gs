@@ -18,7 +18,7 @@ const Landing = () => {
     cardColor,
   }) => {
     return (
-      <Grid item xs={6} md={3}>
+      <Grid item xs={12} sm={6} md={3}>
         <PGlink to={productPage}>
           <Box
             key={key}

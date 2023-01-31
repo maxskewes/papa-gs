@@ -11,7 +11,6 @@ const GREEN = '#6c7e19';
 const ORANGE = '#e26107';
 const SOFT_BLACK = '#242424';
 const TAWNY = '#dcc098';
-const RICH_TAWNY = '#c2914c';
 const MED_TAWNY = '#593c05';
 const DARK_TAWNY = '#3d2a05';
 
@@ -19,6 +18,9 @@ let PGtheme = createTheme({
   palette: {
     mode: 'light',
     BITCH_TAWNY: '#e26107',
+    RICH_TAWNY: '#c2914c',
+    MED_TAWNY: '#593c05',
+    DARK_TAWNY: '#3d2a05',
     pg: { softBlack: SOFT_BLACK, black: BLACK, white: WHITE, nav: NAV },
     primary: {
       main: GREEN,
@@ -35,9 +37,6 @@ let PGtheme = createTheme({
       green: GREEN,
       orange: ORANGE,
       tawny: TAWNY,
-      rich_tawny: RICH_TAWNY,
-      med_tawny: MED_TAWNY,
-      dark_tawny: DARK_TAWNY,
     },
     background: {
       main: '#f7e8b7',
