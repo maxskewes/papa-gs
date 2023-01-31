@@ -7,7 +7,7 @@ const VarietyPage = ({
   shadowClassName,
   imageSrc,
   imageAlt,
-  description,
+  children,
 }) => {
   return (
     <RouteContainer>
@@ -62,7 +62,7 @@ const VarietyPage = ({
               fontWeight: 600,
             }}
           >
-            {description}
+            {children}
           </Typography>
         </Grid>
       </Grid>
