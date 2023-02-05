@@ -115,27 +115,34 @@ const SiteHeadLg = () => {
   return (
     <Box
       sx={{
-        width: '100%',
-        display: { xs: 'none', md: 'flex' },
-        justifyContent: 'center',
+        display: 'flex',
+        flexDirection: 'column',
       }}
     >
       <Box
         sx={{
-          maxWidth: '1400px',
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          paddingX: { md: '1rem', lg: '2rem' },
-          flexGrow: 2,
+          width: '100%',
+          display: { xs: 'none', md: 'flex' },
+          justifyContent: 'center',
         }}
       >
-        <SiteHeadLogo />
-        <SiteHeadSlogan />
-        {menuOpen && <VarietiesMenu />}
-        <LgLinkContainer />
+        <Box
+          sx={{
+            maxWidth: '1400px',
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            paddingX: { md: '1rem', lg: '2rem' },
+            flexGrow: 2,
+          }}
+        >
+          <SiteHeadLogo />
+          <SiteHeadSlogan />
+          <LgLinkContainer />
+        </Box>
       </Box>
+      {menuOpen && <VarietiesMenu />}
     </Box>
   );
 };
