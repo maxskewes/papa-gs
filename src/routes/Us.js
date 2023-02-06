@@ -36,7 +36,7 @@ const Us = () => {
           OR.
         </Typography>
         </Container>
-        <Container marginBottom={{ xs: '2rem' }}>
+        <Container sx= {{ marginBottom:{ xs: '2rem' }} }>
         <Typography
           variant='h4'
           className='shadow_sesame'

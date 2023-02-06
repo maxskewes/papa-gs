@@ -109,9 +109,7 @@ const SiteHeadLg = () => {
           >
             Varieties.
           </Typography>
-          <Box ref={menuRef}>
-          {varietiesMenuOpen && <VarietiesMenu  />}
-          </Box>
+          <Box ref={menuRef}>{varietiesMenuOpen && <VarietiesMenu />}</Box>
         </Button>
         <LgLinkItem
           to={'/get'}
