@@ -37,10 +37,10 @@ const SiteFoot = () => {
             <Typography
               variant='h3'
               sx={{
-                color: 'flash.tawny',
+                color: 'TAWNY',
                 padding: '16px',
                 cursor: 'pointer',
-                '&:hover': { color: 'flash.rich_tawny' },
+                '&:hover': { color: 'RICH_TAWNY' },
               }}
             >
               <RiFacebookCircleFill />
@@ -51,11 +51,11 @@ const SiteFoot = () => {
             <Typography
               variant='h3'
               sx={{
-                color: 'flash.tawny',
+                color: 'TAWNY',
                 padding: '16px',
                 cursor: 'pointer',
 
-                '&:hover': { color: 'flash.rich_tawny' },
+                '&:hover': { color: 'RICH_TAWNY' },
               }}
             >
               <RiInstagramFill m={4} />
@@ -67,10 +67,10 @@ const SiteFoot = () => {
               variant='h3'
               className='footer'
               sx={{
-                color: 'flash.tawny',
+                color: 'TAWNY',
                 padding: '16px',
                 cursor: 'pointer',
-                '&:hover': { color: 'flash.rich_tawny' },
+                '&:hover': { color: 'RICH_TAWNY' },
               }}
             >
               <RiMailFill m={4} />
@@ -87,10 +87,18 @@ const SiteFoot = () => {
             padding: '20px',
           }}
         >
-          <Typography variant='footer' className='footer'>
+          <Typography
+            variant='footer'
+            className='footer'
+            sx={{ fontSize: { xs: '20px', sm: '24px' } }}
+          >
             Papa G&apos;s Vegan Organics
           </Typography>
-          <Typography variant='footer' className='footer'>
+          <Typography
+            variant='footer'
+            className='footer'
+            sx={{ fontSize: { xs: '20px', sm: '24px' } }}
+          >
             Portland, OR
           </Typography>
         </Container>

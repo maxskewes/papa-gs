@@ -10,6 +10,8 @@ const PageHead = ({ title, subtitle, subtitle2 }) => {
         className='shadow_bbq'
         variant='h2'
         sx={{
+          color: 'BLACK',
+          marginBottom: { xs: '.5rem', md: '1rem' },
           textAlign: 'center',
           lineHeight: { xs: 1, lg: 1.5 },
         }}
@@ -17,12 +19,13 @@ const PageHead = ({ title, subtitle, subtitle2 }) => {
         {title}
       </Typography>
       <Typography
-        variant='h5'
         sx={{
+          fontSize: { xs: '20px', sm: '24px', md: '28px' },
+          lineHeight: 1.2,
           fontFamily: 'Ribeye',
           textAlign: 'center',
           maxWidth: 900,
-          color: 'flash.med_tawny',
+          color: 'MED_TAWNY',
           fontWeight: 600,
         }}
       >
@@ -33,7 +36,7 @@ const PageHead = ({ title, subtitle, subtitle2 }) => {
         sx={{
           textAlign: 'center',
           maxWidth: 900,
-          color: 'flash.med_tawny',
+          color: 'MED_TAWNY',
           fontWeight: 600,
         }}
       >

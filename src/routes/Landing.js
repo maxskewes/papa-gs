@@ -73,7 +73,7 @@ const Landing = () => {
       </Grid>
       <Box
         sx={{
-          width: '400px',
+          width: { xs: '280px', sm: '400px' },
           display: 'flex',
           alignContent: 'center',
           justifyContent: 'center',

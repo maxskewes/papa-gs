@@ -12,6 +12,7 @@ const SectionHead = ({ title, subtitle }) => {
         sx={{
           textAlign: 'center',
           maxWidth: 900,
+          color: 'DARK_TAWNY',
         }}
       >
         {title}
@@ -22,7 +23,7 @@ const SectionHead = ({ title, subtitle }) => {
           fontFamily: 'Ribeye',
           textAlign: 'center',
           maxWidth: 900,
-          color: 'flash.dark_tawny',
+          color: 'DARK_TAWNY',
           fontWeight: 600,
         }}
       >

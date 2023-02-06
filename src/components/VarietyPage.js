@@ -44,7 +44,7 @@ const VarietyPage = ({
         <Grid item xs={12} md={6}>
           <Typography
             sx={{
-              color: 'flash.dark_tawny',
+              color: 'DARK_TAWNY',
               textIndent: '1rem',
               textAlign: {
                 xs: 'justify',

@@ -57,7 +57,7 @@ const MenuIcon = () => {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'flex-start',
-        color: 'flash.tawny',
+        color: 'TAWNY',
         '&:hover': {
           color: '#e9d7be',
         },
@@ -96,7 +96,7 @@ const SmLinkItem = ({ to, title }) => {
           display: 'flex',
           flexDirection: 'column',
           minWidth: '100vw',
-          color: 'flash.tawny',
+          color: 'TAWNY',
           justifyContent: 'center',
           alignItems: 'center',
           textAlign: 'center',

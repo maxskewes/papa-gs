@@ -41,11 +41,11 @@ const SiteHeadLg = () => {
             <Typography
               className='header'
               sx={{
-                color: 'flash.tawny',
+                color: 'TAWNY',
                 fontFamily: 'Ribeye Marrow',
                 fontWeight: 400,
                 fontSize: '2.5rem',
-                '&:hover': { color: 'flash.rich_tawny' },
+                '&:hover': { color: 'RICH_TAWNY' },
               }}
             >
               {title}
@@ -57,7 +57,7 @@ const SiteHeadLg = () => {
                 md: 'none',
               }}
               sx={{
-                color: 'flash.tawny',
+                color: 'TAWNY',
                 fontFamily: 'Ribeye',
                 textTransform: 'uppercase',
                 fontSize: '14px',
@@ -99,12 +99,12 @@ const SiteHeadLg = () => {
           <Typography
             className='header'
             sx={{
-              color: 'flash.tawny',
+              color: 'TAWNY',
               fontFamily: 'Ribeye Marrow',
               fontWeight: 400,
               textTransform: 'none',
               fontSize: '2.5rem',
-              '&:hover': { color: 'flash.rich_tawny' },
+              '&:hover': { color: 'RICH_TAWNY' },
             }}
           >
             Varieties.

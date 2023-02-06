@@ -7,6 +7,7 @@ export const SiteHeadLogo = () => {
   return (
     <PGlink to='/'>
       <Box
+      display={'flex'}
         padding={{ xs: '0 0 0 1.5rem', md: 0 }}
         width={{ xs: '200px', sm: '250px', md: '300px', lg: '360px' }}
         marginTop={{ xs: '0', sm: '-10px', md: '-24px', lg: '-32px' }}
@@ -34,7 +35,7 @@ export const SiteHeadSlogan = () => {
           fontSize: { xs: '18px', sm: '22px', lg: '24px' },
           lineHeight: { xs: 1.25, md: 1.125 },
           fontWeight: 400,
-          color: 'flash.tawny',
+          color: 'TAWNY',
         }}
       >
         Seasoned. <br />

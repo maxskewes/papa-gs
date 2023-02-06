@@ -66,7 +66,7 @@ cursor='pointer'
   alignItems='center'
   minWidth={'100%'}
   sx={{
-    color: 'flash.tawny',
+    color: 'TAWNY',
     fontFamily: 'Ribeye Marrow',
     fontWeight: 400,
     textTransform: 'capitalize',

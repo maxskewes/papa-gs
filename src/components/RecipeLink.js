@@ -23,7 +23,7 @@ const RecipeLink = ({ product }) => {
           sx={{
             fontFamily: 'Ribeye',
             fontWeight: 400,
-            color: 'flash.tawny',
+            color: 'TAWNY',
           }}
         >
           Check out our

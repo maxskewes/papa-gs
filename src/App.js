@@ -18,7 +18,7 @@ import { Box } from '@mui/material';
 
 function App() {
   return (
-    <BrowserRouter maxWidth={'1400px'}>
+    <BrowserRouter>
       <Box
         sx={{
           minHeight: '100vh',

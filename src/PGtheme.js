@@ -11,13 +11,11 @@ const GREEN = '#6c7e19';
 const ORANGE = '#e26107';
 const SOFT_BLACK = '#242424';
 const TAWNY = '#dcc098';
-const MED_TAWNY = '#593c05';
-const DARK_TAWNY = '#3d2a05';
 
 let PGtheme = createTheme({
   palette: {
     mode: 'light',
-    BITCH_TAWNY: '#e26107',
+    TAWNY: '#dcc098',
     RICH_TAWNY: '#c2914c',
     MED_TAWNY: '#593c05',
     DARK_TAWNY: '#3d2a05',
@@ -86,7 +84,7 @@ let PGtheme = createTheme({
     footer: {
       fontFamily: 'Ribeye',
       fontWeight: 500,
-      fontSize: '24px',
+      textAlign: 'center',
       color: TAWNY,
     },
     navLink: {

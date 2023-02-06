@@ -6,13 +6,13 @@ import PageHead from '../components/PageHead';
 
 const Contact = () => {
   return (
-    <RouteContainer sx={{ display: 'flex', flexGrow: 2}}>
+    <RouteContainer sx={{ display: 'flex', flexGrow: 2 }}>
       <PageHead title={'Contact.'} />
-      <FlexContainer column sx={{ display: 'flex', flexGrow: 2}}>
+      <FlexContainer column sx={{ display: 'flex', flexGrow: 2 }}>
         <Typography
           sx={{
-            color: 'flash.med_tawny',
-            fontSize: '24px',
+            color: 'MED_TAWNY',
+            fontSize: { xs: '20px', sm: '24px' },
             fontFamily: 'Ribeye',
             fontWeight: 600,
           }}
@@ -21,8 +21,8 @@ const Contact = () => {
         </Typography>
         <Typography
           sx={{
-            color: 'flash.med_tawny',
-            fontSize: '24px',
+            color: 'MED_TAWNY',
+            fontSize: { xs: '14px', sm: '24px' },
             fontFamily: 'Ribeye',
             fontWeight: 600,
           }}
