@@ -15,7 +15,7 @@ const VarietyPage = ({
         variant='h2'
         className={shadowClassName}
         sx={{
-          color: 'pg.black',
+          color: 'SOFT_BLACK',
           textAlign: 'center',
           margin: { xs: 0, md: '0 0 1rem 0' },
         }}

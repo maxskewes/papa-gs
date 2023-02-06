@@ -10,7 +10,7 @@ const PageHead = ({ title, subtitle, subtitle2 }) => {
         className='shadow_bbq'
         variant='h2'
         sx={{
-          color: 'BLACK',
+          color: 'SOFT_BLACK',
           marginBottom: { xs: '.5rem', md: '1rem' },
           textAlign: 'center',
           lineHeight: { xs: 1, lg: 1.5 },

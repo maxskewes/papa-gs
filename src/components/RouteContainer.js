@@ -9,7 +9,7 @@ const RouteContainer = ({ children }) => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        color: 'primary.text',
+        color: 'SOFT_BLACK',
         flexGrow: 2,
         minWidth: '100vw',
       }}

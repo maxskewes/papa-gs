@@ -53,7 +53,7 @@ const ProductCard = () => {
           <CardActions sx={{ display: 'flex', justifyContent: 'center' }}>
             <Button
               size='small'
-              sx={{ color: 'primary.dark', alignSelf: 'center' }}
+              sx={{ color: 'RED', alignSelf: 'center' }}
               href='/cook'
             >
               Recipes

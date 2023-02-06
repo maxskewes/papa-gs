@@ -90,14 +90,14 @@ const SiteFoot = () => {
           <Typography
             variant='footer'
             className='footer'
-            sx={{ fontSize: { xs: '20px', sm: '24px' } }}
+            sx={{ color: 'TAWNY', fontSize: { xs: '20px', sm: '24px' } }}
           >
             Papa G&apos;s Vegan Organics
           </Typography>
           <Typography
             variant='footer'
             className='footer'
-            sx={{ fontSize: { xs: '20px', sm: '24px' } }}
+            sx={{ color: 'TAWNY', fontSize: { xs: '20px', sm: '24px' } }}
           >
             Portland, OR
           </Typography>
