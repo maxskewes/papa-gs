@@ -27,25 +27,23 @@ export default function VarietiesMenu() {
   return (
     <Box
       sx={{
-
- 
+        flexDirection: 'column',
+        background: 'radial-gradient( #f7e5ba 60%, #e8ba4d 100%)',
+        maxWidth: '200px',
+        position: 'absolute',
+        left: '20%',
+        top: 'calc(100% - .5rem)',
+        boxShadow: '0 5px 20px rgba(36, 36, 36, 1)',
+        borderRadius: ' 0 0 .35rem .35rem',
+        opacity: .70,
+        // transform: 'translateY(10rem)',
+        // transition: 'opacity 150ms ease-in-out(0)',
       }}
     >
-      <Box
-        sx={{
-          flexDirection: 'column',
-          background: 'radial-gradient( #f7e5ba 60%, #e8ba4d 100%)',
-          opacity: '75%',
-          maxWidth: '200px',
-          marginTop: '-120px',
-          marginLeft: '56%',
-        }}
-      >
-        <VarietyLink to='/original-recipe'>Original Recipe</VarietyLink>
-        <VarietyLink to='/savory-sesame'>Savory Sesame</VarietyLink>
-        <VarietyLink to='/street-taco'>Street Taco</VarietyLink>
-        <VarietyLink to='/barbeque'>Barbeque</VarietyLink>
-      </Box>
+      <VarietyLink to='/original-recipe'>Original Recipe</VarietyLink>
+      <VarietyLink to='/savory-sesame'>Savory Sesame</VarietyLink>
+      <VarietyLink to='/street-taco'>Street Taco</VarietyLink>
+      <VarietyLink to='/barbeque'>Barbeque</VarietyLink>
     </Box>
   );
 }

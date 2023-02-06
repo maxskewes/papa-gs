@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import { React, useState, useEffect, useRef } from 'react';
 import '../../styles.css';
 import { Box, Typography, Button, Zoom } from '@mui/material';
 import { SiteHeadLogo, SiteHeadSlogan } from './SiteHeadLogo';
@@ -7,10 +7,21 @@ import PGtooltip from './PGtooltip.tsx';
 import VarietiesMenu from '../VarietiesMenu';
 
 const SiteHeadLg = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [varietiesMenuOpen, setVarietiesMenuOpen] = useState(false);
   const handleClick = () => {
-    setMenuOpen(!menuOpen);
+    setVarietiesMenuOpen(!varietiesMenuOpen);
   };
+
+  let menuRef = useRef();
+
+  useEffect(() => {
+    let handleClose = (e) => {
+      if (!menuRef.current.contains(e.target)) {
+        setVarietiesMenuOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClose);
+  });
 
   const LgLinkItem = ({ to, description, title }) => {
     return (
@@ -76,6 +87,7 @@ const SiteHeadLg = () => {
             xs: 'none',
             md: 'flex',
           },
+          postion: 'relative',
           flexGrow: 1,
           justifyContent: 'space-around',
           alignItems: 'center',
@@ -97,6 +109,9 @@ const SiteHeadLg = () => {
           >
             Varieties.
           </Typography>
+          <Box ref={menuRef}>
+          {varietiesMenuOpen && <VarietiesMenu  />}
+          </Box>
         </Button>
         <LgLinkItem
           to={'/get'}
@@ -142,7 +157,6 @@ const SiteHeadLg = () => {
           <LgLinkContainer />
         </Box>
       </Box>
-      {menuOpen && <VarietiesMenu />}
     </Box>
   );
 };

@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import { React } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SiteFoot from './components/SiteFoot';
 import SiteHead from './components/siteHead';
@@ -20,7 +20,12 @@ function App() {
   return (
     <BrowserRouter maxWidth={'1400px'}>
       <Box
-        sx={{ minHeight: '100vh', minWidth: '100vw', display: 'flex', flexDirection: 'column' }}
+        sx={{
+          minHeight: '100vh',
+          minWidth: '100vw',
+          display: 'flex',
+          flexDirection: 'column',
+        }}
       >
         <SiteHead />
         <Routes>
