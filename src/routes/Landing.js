@@ -3,6 +3,7 @@ import { Box, Grid } from '@mui/material';
 import RouteContainer from '../components/RouteContainer';
 import PageHead from '../components/PageHead';
 import PGlink from '../components/PGlink';
+import icons from '../assets/dietary_icons_120dpi.png';
 
 const Landing = () => {
   const ProductCard = ({
@@ -82,17 +83,7 @@ const Landing = () => {
           cardColor={'BLUE'}
         />
       </Grid>
-      <Box
-        sx={{
-          width: { xs: '280px', sm: '400px' },
-          display: 'flex',
-          alignContent: 'center',
-          justifyContent: 'center',
-          opacity: '85%',
-        }}
-      >
-        <IconImageBox iconImgSrc={'/images/icons/dietary_icons_120dpi.png'} />
-      </Box>
+      <IconImageBox iconImgSrc={icons} />
     </RouteContainer>
   );
 };

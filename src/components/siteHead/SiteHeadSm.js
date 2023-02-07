@@ -4,6 +4,7 @@ import { Box, Icon, Typography } from '@mui/material';
 import { SiteHeadLogo, SiteHeadSlogan } from './SiteHeadLogo';
 import PGlink from '../PGlink';
 import { MdRestaurantMenu } from 'react-icons/md';
+import mainLogo from './logo-yellow-halo.png';
 
 const SiteHeadSm = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,7 @@ const SiteHeadSm = () => {
           isOpen={isOpen}
           sx={{ flexGrow: 1 }}
         />
-        <SiteHeadLogo imgSrc={'/images/logo/logo-yellow-halo.png'}/>
+        <SiteHeadLogo imgSrc={mainLogo}/>
         <SiteHeadSlogan />
       </Box>
       <SmLinkContainer isOpen={isOpen} />

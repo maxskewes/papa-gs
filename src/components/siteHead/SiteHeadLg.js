@@ -5,6 +5,7 @@ import { SiteHeadLogo, SiteHeadSlogan } from './SiteHeadLogo';
 import PGlink from '../PGlink';
 import PGtooltip from './PGtooltip.tsx';
 import VarietiesMenu from '../VarietiesMenu';
+import mainLogo from './logo-yellow-halo.png';
 
 const SiteHeadLg = () => {
   const [varietiesMenuOpen, setVarietiesMenuOpen] = useState(false);
@@ -150,7 +151,7 @@ const SiteHeadLg = () => {
             flexGrow: 2,
           }}
         >
-          <SiteHeadLogo imgSrc={'/images/logo/logo-yellow-halo.png'}/>
+          <SiteHeadLogo imgSrc={mainLogo}/>
           <SiteHeadSlogan />
           <LgLinkContainer />
         </Box>
