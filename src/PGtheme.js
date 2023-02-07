@@ -10,6 +10,10 @@ let PGtheme = createTheme({
     RICH_TAWNY: '#c2914c',
     MED_TAWNY: '#593c05',
     DARK_TAWNY: '#3d2a05',
+    YELLOW: '#deb20b',
+    RED: '#c44431',
+    BLUE: '#1c6a9a',
+    GREEN: '#6c7e19',
   },
   typography: {
     fontWeightLight: 700,

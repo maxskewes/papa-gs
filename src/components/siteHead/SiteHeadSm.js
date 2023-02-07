@@ -24,7 +24,7 @@ const SiteHeadSm = () => {
           isOpen={isOpen}
           sx={{ flexGrow: 1 }}
         />
-        <SiteHeadLogo />
+        <SiteHeadLogo imgSrc={'/images/logo/logo-yellow-halo.png'}/>
         <SiteHeadSlogan />
       </Box>
       <SmLinkContainer isOpen={isOpen} />

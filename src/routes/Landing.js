@@ -4,11 +4,6 @@ import RouteContainer from '../components/RouteContainer';
 import PageHead from '../components/PageHead';
 import PGlink from '../components/PGlink';
 
-const YELLOW = '#deb20b';
-const RED = '#c44431';
-const BLUE = '#1c6a9a';
-const GREEN = '#6c7e19';
-
 const Landing = () => {
   const ProductCard = ({
     productName,
@@ -42,6 +37,22 @@ const Landing = () => {
     );
   };
 
+  const IconImageBox = ({ iconImgSrc }) => {
+    return (
+      <Box
+        sx={{
+          width: { xs: '280px', sm: '400px' },
+          display: 'flex',
+          alignContent: 'center',
+          justifyContent: 'center',
+          opacity: '85%',
+        }}
+      >
+        <img src={iconImgSrc} alt='dietary icon list' width='100%' />
+      </Box>
+    );
+  };
+
   return (
     <RouteContainer>
       <PageHead title={'All Vegan. All Awesome.'} />
@@ -50,25 +61,25 @@ const Landing = () => {
           productName={'Original Recipe'}
           productPage={'/original-recipe'}
           productImage={'/images/trimmed/original_pack_120psi.png'}
-          cardColor={YELLOW}
+          cardColor={'YELLOW'}
         />
         <ProductCard
           productName={'Savory Sesame'}
           productPage={'/savory-sesame'}
           productImage={'/images/trimmed/sesame_pack_120psi.png'}
-          cardColor={GREEN}
+          cardColor={'GREEN'}
         />
         <ProductCard
           productName={'Taco Tofu'}
           productPage={'/street-taco'}
           productImage={'/images/trimmed/taco_pack_120psi.png'}
-          cardColor={RED}
+          cardColor={'RED'}
         />
         <ProductCard
           productName={'BBQ'}
           productPage={'/barbeque'}
           productImage={'/images/trimmed/bbq_pack_120psi.png'}
-          cardColor={BLUE}
+          cardColor={'BLUE'}
         />
       </Grid>
       <Box
@@ -80,11 +91,7 @@ const Landing = () => {
           opacity: '85%',
         }}
       >
-        <img
-          src={'/images/dietary_icons_120dpi.png'}
-          alt='dietary icon list'
-          width='100%'
-        />
+        <IconImageBox iconImgSrc={'/images/icons/dietary_icons_120dpi.png'} />
       </Box>
     </RouteContainer>
   );

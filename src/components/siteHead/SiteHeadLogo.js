@@ -3,16 +3,16 @@ import '../../styles.css';
 import { Box, Typography } from '@mui/material';
 import PGlink from '../PGlink';
 
-export const SiteHeadLogo = () => {
+export const SiteHeadLogo = ({imgSrc}) => {
   return (
     <PGlink to='/'>
       <Box
-      display={'flex'}
+        display={'flex'}
         padding={{ xs: '0 0 0 1.5rem', md: 0 }}
         width={{ xs: '200px', sm: '250px', md: '300px', lg: '360px' }}
         marginTop={{ xs: '0', sm: '-10px', md: '-24px', lg: '-32px' }}
         component='img'
-        src='/images/logo-yellow-halo.png'
+        src={imgSrc}
         alt="Papa G's logo"
       />
     </PGlink>

@@ -150,7 +150,7 @@ const SiteHeadLg = () => {
             flexGrow: 2,
           }}
         >
-          <SiteHeadLogo />
+          <SiteHeadLogo imgSrc={'/images/logo/logo-yellow-halo.png'}/>
           <SiteHeadSlogan />
           <LgLinkContainer />
         </Box>
