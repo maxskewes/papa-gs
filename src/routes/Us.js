@@ -14,6 +14,7 @@ const Us = () => {
             variant='h4'
             className='shadow_sesame'
             sx={{
+              fontFamily: 'HerSong',
               textAlign: 'center',
               maxWidth: 900,
               color: 'DARK_TAWNY',
@@ -22,10 +23,13 @@ const Us = () => {
           >
             Our Story
           </Typography>
+          <div   className="font-hello-sailor" >why Hello Sailor Its me Motley Crue</div>
+          <div   className="font-her-song" >PAPA GS TOFU IS A SMALL FAMILY-OWNED COMPANY</div>
           <Typography
+          className="font-hello-sailor"
             variant='h6'
             sx={{
-              fontFamily: 'Ribeye',
+              // fontFamily: 'Ribeye',
               textAlign: 'center',
               maxWidth: 900,
               color: 'DARK_TAWNY',

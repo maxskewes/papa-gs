@@ -1,3 +1,17 @@
+.font-hello-sailor {
+  font-family: "HelloSailor";
+  font-weight: 700;
+  font-size: 36px;
+ }
+
+ .font-her-song {
+  font-family: "HerSong";
+  font-weight: 700;
+  font-size: large;
+ }
+ 
+
+
 .active {
   color: red;
 }
