@@ -1,5 +1,6 @@
 import { React, useState, useEffect, useRef } from 'react';
 import '../../styles.css';
+import { motion } from 'framer-motion';
 import { Box, Typography, Button, Zoom } from '@mui/material';
 import { SiteHeadLogo, SiteHeadSloganLg } from './SiteHeadLogo';
 import PGlink from '../PGlink';
@@ -97,31 +98,49 @@ const SiteHeadLg = () => {
         }}
       >
         <Button onClick={handleClick}>
-          <Typography
-            className='header'
-            sx={{
-              color: 'TAWNY',
-              fontFamily: 'Ribeye Marrow',
-              fontWeight: 400,
-              textTransform: 'none',
-              fontSize: '2.5rem',
-              '&:hover': { color: 'RICH_TAWNY' },
-            }}
+          <motion.div
+            initial={{ x: 150, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
           >
-            Varieties.
-          </Typography>
+            <Typography
+              className='header'
+              sx={{
+                color: 'TAWNY',
+                fontFamily: 'Ribeye Marrow',
+                fontWeight: 400,
+                textTransform: 'none',
+                fontSize: '2.5rem',
+                '&:hover': { color: 'RICH_TAWNY' },
+              }}
+            >
+              Varieties.
+            </Typography>
+          </motion.div>
           <Box ref={menuRef}>{varietiesMenuOpen && <VarietiesMenu />}</Box>
         </Button>
-        <LgLinkItem
-          to={'/get'}
-          description={'Where to purchase'}
-          title={'Get.'}
-        />
-        <LgLinkItem
-          to={'/us'}
-          description={"Papa G's Vegan Organics"}
-          title={'Us.'}
-        />
+        <motion.div
+          initial={{ x: 150, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+        >
+          <LgLinkItem
+            to={'/get'}
+            description={'Where to purchase'}
+            title={'Get.'}
+          />
+        </motion.div>
+        <motion.div
+          initial={{ x: 150, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <LgLinkItem
+            to={'/us'}
+            description={"Papa G's Vegan Organics"}
+            title={'Us.'}
+          />
+        </motion.div>
       </Box>
     );
   };
@@ -151,7 +170,7 @@ const SiteHeadLg = () => {
             flexGrow: 2,
           }}
         >
-          <SiteHeadLogo imgSrc={mainLogo}/>
+          <SiteHeadLogo imgSrc={mainLogo} />
           <SiteHeadSloganLg />
           <LgLinkContainer />
         </Box>
