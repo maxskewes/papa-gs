@@ -6,7 +6,7 @@ const BBQ = () => {
     <VarietyPage
       varietyName='Barbeque'
       shadowClassName='shadow_bbq'
-      imageSrc='/images/pack-over-board/bbq_pack_on_board_120psi.png'
+      imageSrc='/images/pack-over-board/papa_gs_tofu_bbq_board.png'
       imageAlt='Organic BBQ Tofu'
     >
       BBQ tofu just got better. Papa G&apos;s Organic Barbeque Tofu is our

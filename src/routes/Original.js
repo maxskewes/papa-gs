@@ -6,7 +6,7 @@ const Original = () => {
     <VarietyPage
       varietyName='the Original Recipe'
       shadowClassName='shadow'
-      imageSrc='/images/pack-over-board/original_pack_on_board_120psi.png'
+      imageSrc='/images/pack-over-board/papa_gs_tofu_original_board.png'
       imageAlt='Original Recipe Tofu'
     >
       Our organic tofu is a versatile and delicious plant-based option that can

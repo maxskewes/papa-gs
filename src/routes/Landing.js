@@ -1,9 +1,10 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Box, Grid } from '@mui/material';
 import RouteContainer from '../components/RouteContainer';
 import PageHead from '../components/PageHead';
 import PGlink from '../components/PGlink';
-import icons from '../assets/dietary_icons_120dpi.png';
+import icons from '../assets/dietary_icons.png';
 
 const Landing = () => {
   const ProductCard = ({
@@ -15,24 +16,35 @@ const Landing = () => {
     return (
       <Grid item xs={12} sm={6} md={3}>
         <PGlink to={productPage}>
-          <Box
-            backgroundColor={cardColor}
-            sx={{
-              padding: '4% 0 4% 4%',
-              borderRadius: '4px',
-              height: '100%',
-              display: 'flex',
-              alignContent: 'center',
-              justifyContent: 'center',
-            }}
+          <motion.div
+            initial={{ y: 0, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.2 }}
+            style={{ height: '100%' }}
           >
-            <img
-              src={productImage}
-              alt={productName}
-              position='absolute'
-              width='100%'
-            />
-          </Box>
+            <Box
+              bgcolor={cardColor}
+              sx={{
+                width: '100%',
+                height: '100%',
+                padding: '4% 0 4% 4%',
+                borderRadius: '4px',
+                display: 'flex',
+                alignContent: 'center',
+                justifyContent: 'center',
+              }}
+            >
+              <motion.img
+                initial={{ y: 0, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                src={productImage}
+                alt={productName}
+                position='absolute'
+                width='100%'
+              />
+            </Box>
+          </motion.div>
         </PGlink>
       </Grid>
     );
@@ -56,30 +68,36 @@ const Landing = () => {
 
   return (
     <RouteContainer>
-      <PageHead title={'All Vegan. All Awesome.'} />
+      <motion.div
+        initial={{ scale: 0.8, y: 50, opacity: 0 }}
+        animate={{ scale: 1, y: 0, opacity: 1 }}
+        transition={{ duration: 0.3 }}
+      >
+        <PageHead title={'All Vegan. All Awesome.'} />
+      </motion.div>
       <Grid container spacing={2} sx={{ padding: { xs: '24px', sm: '48px' } }}>
         <ProductCard
           productName={'Original Recipe'}
           productPage={'/original-recipe'}
-          productImage={'/images/trimmed/original_pack_120psi.png'}
+          productImage={'/images/packages/original_pack_120psi.png'}
           cardColor={'YELLOW'}
         />
         <ProductCard
           productName={'Savory Sesame'}
           productPage={'/savory-sesame'}
-          productImage={'/images/trimmed/sesame_pack_120psi.png'}
+          productImage={'/images/packages/sesame_pack_120psi.png'}
           cardColor={'GREEN'}
         />
         <ProductCard
           productName={'Taco Tofu'}
           productPage={'/street-taco'}
-          productImage={'/images/trimmed/taco_pack_120psi.png'}
+          productImage={'/images/packages/taco_pack_120psi.png'}
           cardColor={'RED'}
         />
         <ProductCard
           productName={'BBQ'}
           productPage={'/barbeque'}
-          productImage={'/images/trimmed/bbq_pack_120psi.png'}
+          productImage={'/images/packages/bbq_pack_120psi.png'}
           cardColor={'BLUE'}
         />
       </Grid>
