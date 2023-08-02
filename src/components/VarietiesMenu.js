@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import '../styles.css';
 import { Box, Typography } from '@mui/material';
@@ -16,15 +17,27 @@ export default function VarietiesMenu() {
             textTransform: 'uppercase',
             textAlign: 'center',
             padding: '.25rem',
+            '&:hover': { color: 'RICH_TAWNY', backgroundColor: 'MED_TAWNY' },
           }}
         >
-          {children}
+          <motion.div
+            initial={{ y: -20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.2 }}
+          >
+            {children}
+          </motion.div>
         </Typography>
       </NavLink>
     );
   };
 
   return (
+    // <motion.div
+    // initial={{ opacity: 0 }}
+    // animate={{ opacity: 1 }}
+    // transition={{ duration: 0.5 }}
+    // >
     <Box
       sx={{
         flexDirection: 'column',
@@ -35,7 +48,7 @@ export default function VarietiesMenu() {
         top: 'calc(100% - .5rem)',
         boxShadow: '0 5px 20px rgba(36, 36, 36, 1)',
         borderRadius: ' 0 0 .35rem .35rem',
-        opacity: .70,
+        opacity: 0.7,
         // transform: 'translateY(10rem)',
         // transition: 'opacity 150ms ease-in-out(0)',
       }}
@@ -45,6 +58,7 @@ export default function VarietiesMenu() {
       <VarietyLink to='/street-taco'>Street Taco</VarietyLink>
       <VarietyLink to='/barbeque'>Barbeque</VarietyLink>
     </Box>
+    // </motion.div>
   );
 }
 

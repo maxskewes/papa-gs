@@ -12,9 +12,9 @@ import PGlink from '../PGlink';
 const SiteFoot = () => {
   return (
     <motion.div
-      initial={{ y: 0, opacity: 1 }}
+      initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.2 }}
+      transition={{ duration: 1 }}
       style={{ height: '100%' }}
     >
       <Box

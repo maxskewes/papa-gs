@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import '../../styles.css';
+import { motion } from 'framer-motion';
 import { Box, Icon, Typography } from '@mui/material';
-import { SiteHeadLogo, SiteHeadSlogan } from './SiteHeadLogo';
+import { SiteHeadLogo, SiteHeadSloganSm } from './SiteHeadLogo';
 import PGlink from '../PGlink';
 import { MdRestaurantMenu } from 'react-icons/md';
 import mainLogo from './logo-yellow-halo.png';
@@ -25,8 +26,8 @@ const SiteHeadSm = () => {
           isOpen={isOpen}
           sx={{ flexGrow: 1 }}
         />
-        <SiteHeadLogo imgSrc={mainLogo}/>
-        <SiteHeadSlogan />
+        <SiteHeadLogo imgSrc={mainLogo} />
+        <SiteHeadSloganSm />
       </Box>
       <SmLinkContainer isOpen={isOpen} />
     </>
@@ -35,18 +36,24 @@ const SiteHeadSm = () => {
 
 const MenuToggle = ({ handleToggle, isOpen }) => {
   return (
-    <Box
-      onClick={handleToggle}
-      sx={{
-        width: '50px',
-        cursor: 'pointer',
-        display: { xs: 'flex', md: 'none' },
-        position: 'relative',
-        marginBottom: '4px',
-      }}
+    <motion.div
+      initial={{ x: -50, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.3 }}
     >
-      {isOpen ? <MenuIcon /> : <MenuIcon />}
-    </Box>
+      <Box
+        onClick={handleToggle}
+        sx={{
+          width: '50px',
+          cursor: 'pointer',
+          display: { xs: 'flex', md: 'none' },
+          position: 'relative',
+          marginBottom: '4px',
+        }}
+      >
+        {isOpen ? <MenuIcon /> : <MenuIcon />}
+      </Box>
+    </motion.div>
   );
 };
 
@@ -65,14 +72,14 @@ const MenuIcon = () => {
       }}
     >
       <Icon
-      //add shadow to icon
+        //add shadow to icon
         sx={{
           width: '60px',
           height: 'auto',
           margin: 0,
         }}
       >
-        <MdRestaurantMenu size= '40px' />
+        <MdRestaurantMenu size='40px' />
       </Icon>
       <Typography
         className='slogan'

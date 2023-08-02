@@ -1,7 +1,7 @@
 import { React, useState, useEffect, useRef } from 'react';
 import '../../styles.css';
 import { Box, Typography, Button, Zoom } from '@mui/material';
-import { SiteHeadLogo, SiteHeadSlogan } from './SiteHeadLogo';
+import { SiteHeadLogo, SiteHeadSloganLg } from './SiteHeadLogo';
 import PGlink from '../PGlink';
 import PGtooltip from './PGtooltip.tsx';
 import VarietiesMenu from '../VarietiesMenu';
@@ -152,7 +152,7 @@ const SiteHeadLg = () => {
           }}
         >
           <SiteHeadLogo imgSrc={mainLogo}/>
-          <SiteHeadSlogan />
+          <SiteHeadSloganLg />
           <LgLinkContainer />
         </Box>
       </Box>
