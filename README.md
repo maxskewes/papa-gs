@@ -8,5 +8,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ##### Deployment
-This website was unfortuantely deployed using [BlueHost] at the request of the product owner. A note to fellow developers: while their customer support is usually decent, working with this hosting service causes a minor hinderance as it takes quite a bit longer to reflect changes made to the repository on the world-wide-web.
+This website was unfortuantely deployed using [BlueHost](https://www.bluehost.com/) at the request of the product owner. A note to fellow developers: while their customer support is usually decent, working with this hosting service causes a minor hinderance as it takes quite a bit longer to reflect changes made to the repository on the world-wide-web.
 
