@@ -79,25 +79,25 @@ const Landing = () => {
         <ProductCard
           productName={'Original Recipe'}
           productPage={'/original-recipe'}
-          productImage={'/images/packages/original_pack_120psi.png'}
+          productImage={'/images/bags/web-bag-original.png'}
           cardColor={'YELLOW'}
         />
         <ProductCard
           productName={'Savory Sesame'}
           productPage={'/savory-sesame'}
-          productImage={'/images/packages/sesame_pack_120psi.png'}
+          productImage={'/images/bags/web-bag-sesame.png'}
           cardColor={'GREEN'}
         />
         <ProductCard
           productName={'Taco Tofu'}
           productPage={'/street-taco'}
-          productImage={'/images/packages/taco_pack_120psi.png'}
+          productImage={'/images/bags/web-bag-taco.png'}
           cardColor={'RED'}
         />
         <ProductCard
           productName={'BBQ'}
           productPage={'/barbeque'}
-          productImage={'/images/packages/bbq_pack_120psi.png'}
+          productImage={'/images/bags/web-bag-bbq.png'}
           cardColor={'BLUE'}
         />
       </Grid>

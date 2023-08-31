@@ -6,7 +6,7 @@ const Taco = () => {
     <VarietyPage
       varietyName='Street Taco'
       shadowClassName='shadow'
-      imageSrc='/images/pack-over-board/papa_gs_tofu_taco_board.png'
+      imageSrc='/images/bags-boards/web-bag-board-taco.png'
       imageAlt='Street Taco Tofu'
     >
       Spice up any meal with Papa G&apos;s Organic Street Taco Tofu! We all know

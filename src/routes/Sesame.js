@@ -6,7 +6,7 @@ const Sesame = () => {
     <VarietyPage
       varietyName='Savory Sesame'
       shadowClassName='shadow_sesame'
-      imageSrc='/images/pack-over-board/papa_gs_tofu_sesame_board.png'
+      imageSrc='/images/bags-boards/web-bag-board-sesame.png'
       imageAlt='Savory Sesame Tofu'
     >
       Organic tofu is marinated in tamari and sesame oil, seasoned with garlic,
