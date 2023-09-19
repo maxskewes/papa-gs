@@ -3,8 +3,8 @@ import { createTheme, responsiveFontSizes } from '@mui/material';
 let PGtheme = createTheme({
   palette: {
     mode: 'light',
-    BLACK: '#333',
-    SOFT_BLACK: '#242424',
+    BLACK: '#222',
+    SOFT_BLACK: '#343434',
     WHITE: '#FFFDFA',
     TAWNY: '#dcc098',
     RICH_TAWNY: '#c2914c',

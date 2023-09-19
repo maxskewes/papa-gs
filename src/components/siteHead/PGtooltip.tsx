@@ -2,7 +2,6 @@ import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
 
-// const SOFT_BLACK = '#242424';
 const RICH_TAWNY = '#593c05';
 
 const PGtooltip = styled(({ className, ...props }: TooltipProps) => (

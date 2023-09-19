@@ -83,6 +83,22 @@ const Get = () => {
             />
           </a>
         </Grid>
+        <Grid item sx={{ maxWidth: { xs: '200px', sm: '300px' } }}>
+          <a
+            href='https://b-linepdx.com/'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <motion.img
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1.5 }}
+              src='/images/grocers/b-line.png'
+              alt="b-line"
+              width='100%'
+            />
+          </a>
+        </Grid>
         <Grid item sx={{ maxWidth: { xs: '150px', sm: '200px' } }}>
           <a
             href='https://www.facebook.com/beaumontvillagemarket/'

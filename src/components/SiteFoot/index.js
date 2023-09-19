@@ -14,7 +14,7 @@ const SiteFoot = () => {
     <div style={{ height: '100%' }}>
       <Box
         sx={{
-          background: 'radial-gradient(circle, #c44431 30%, #212121 100%)',
+          background: 'radial-gradient(circle, #c44431 30%, #111 100%)',
           boxShadow: '0px 5px 25px #242424',
           position: 'relative',
         }}

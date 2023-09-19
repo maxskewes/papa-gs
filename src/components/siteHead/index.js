@@ -17,7 +17,7 @@ const SiteHeadBackground = ({ children }) => {
   return (
     <Box
       sx={{
-        background: 'radial-gradient(circle, #c44431 60%, #333 100%)',
+        background: 'radial-gradient(circle, #c44431 60%, #111 100%)',
         boxShadow: '0px 5px 25px #242424',
         position: 'relative',
         minWidth: '100vw',
