@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const ProductImage = ({ imgSrc }) => {
   return (
-    <Box height='100vh' width='100vw' position={'fixed'} padding={'.5rem'} bgcolor={'white'}>
+    <Box height='100vh' width='100vw' position={'fixed'} padding={'.5rem'} bgcolor={'white'} zIndex={2}>
       <CardMedia
         component='img'
         height='100%'

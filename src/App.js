@@ -42,12 +42,10 @@ function App() {
           <Route path='live' element={<Live />} />
           <Route path='us' element={<Us />} />
           <Route path='contact' element={<Contact />} />
+          <Route path='product-pics/*' element={<ProductPics />} />
           {/* <Route path='*' element={<NoMatch />} /> */}
         </Routes>
         <SiteFoot />
-        <Routes>
-          <Route path='product-pics/*' element={<ProductPics />} />
-        </Routes>
       </Box>
     </BrowserRouter>
   );
