@@ -15,10 +15,8 @@ import Sesame from './routes/Sesame';
 import Taco from './routes/Taco';
 import BBQ from './routes/BBQ';
 import { Box } from '@mui/material';
-import { PPbbq } from './routes/ProductImages';
-import { PPoriginal } from './routes/ProductImages';
-import { PPsesame } from './routes/ProductImages';
-import { PPtaco } from './routes/ProductImages';
+import { PPbbq, PPoriginal, PPsesame, PPtaco } from './routes/ProductImages';
+import { NFbbq, NForiginal, NFsesame, NFtaco } from './routes/NutritionImages';
 
 function App() {
   return (
@@ -44,12 +42,14 @@ function App() {
           <Route path='live' element={<Live />} />
           <Route path='us' element={<Us />} />
           <Route path='contact' element={<Contact />} />
-          <Route path='/product-pics/*'>
-            <Route path='bbq' element={<PPbbq />} />
-            <Route path='original' element={<PPoriginal />} />
-            <Route path='sesame' element={<PPsesame />} />
-            <Route path='taco' element={<PPtaco />} />
-          </Route>
+          <Route path='product-pics/original' element={<PPoriginal />} />
+          <Route path='product-pics/bbq' element={<PPbbq />} />
+          <Route path='product-pics/sesame' element={<PPsesame />} />
+          <Route path='product-pics/taco' element={<PPtaco />} />
+          <Route path='nutrition-facts/original' element={<NForiginal />} />
+          <Route path='nutrition-facts/bbq' element={<NFbbq />} />
+          <Route path='nutrition-facts/sesame' element={<NFsesame />} />
+          <Route path='nutrition-facts/taco' element={<NFtaco />} />
         </Routes>
         <SiteFoot />
       </Box>

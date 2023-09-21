@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, CardMedia } from '@mui/material';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 const ProductImage = ({ imgSrc }) => {
   return (
@@ -35,21 +35,17 @@ const ProductPics = () => {
     'nutrition-taco',
   ];
   return (
-<HashRouter>
-      <Routes>
-        {productPics.map((pp, i) => {
-          return (
-            <Route
-              key={i}
-              path={pp}
-              element={
-                <ProductImage imgSrc={`/images/product_pics/${pp}.png`} />
-              }
-            />
-          );
-        })}
-      </Routes>
-      </HashRouter>
+    <>
+      {productPics.map((pp, i) => {
+        return (
+          <Route
+            key={i}
+            path={pp}
+            element={<ProductImage imgSrc={`/images/product_pics/${pp}.png`} />}
+          />
+        );
+      })}
+    </>
   );
 };
 
