@@ -15,6 +15,7 @@ import Sesame from './routes/Sesame';
 import Taco from './routes/Taco';
 import BBQ from './routes/BBQ';
 import { Box } from '@mui/material';
+import NoMatch from './routes/NoMatch';
 import { PPbbq, PPoriginal, PPsesame, PPtaco } from './routes/ProductImages';
 import { NFbbq, NForiginal, NFsesame, NFtaco } from './routes/NutritionImages';
 
@@ -50,6 +51,7 @@ function App() {
           <Route path='nutrition-facts/bbq' element={<NFbbq />} />
           <Route path='nutrition-facts/sesame' element={<NFsesame />} />
           <Route path='nutrition-facts/taco' element={<NFtaco />} />
+          <Route path='*' element={<NoMatch />} />
         </Routes>
         <SiteFoot />
       </Box>
