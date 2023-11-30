@@ -1,12 +1,11 @@
 # Papa G's Organic Tofu
-### a product website of the parent company Secret Society Organics
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), built with [ReactJS](https://react.dev/) and used some components from the [Chakra-UI](https://chakra-ui.com/) library.
+### an early version of a product website
+This project was initiated with [Create React App](https://github.com/facebook/create-react-app), built with [ReactJS](https://react.dev/) and used some components from the [Chakra-UI](https://chakra-ui.com/) library. 
+
+### Design
+All custom graphic design by Max Skewes. Vectorizing of images done with [Inkscape](https://inkscape.org/). [Gimp](https://www.gimp.org/) was used for additional design and art modification.
 
 # Please Visit: [papagstofu.com](https://papagstofu.com/)
 ### and if in the Pacific Northwest, do enjoy this fine product.
 
-
-
-##### Deployment
-This website was unfortuantely deployed using [BlueHost](https://www.bluehost.com/) at the request of the product owner. A note to fellow developers: while their customer support is usually decent, working with this hosting service causes a minor hinderance as it takes quite a bit longer to reflect changes made to the repository on the world-wide-web.
 
